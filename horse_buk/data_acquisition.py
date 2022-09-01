@@ -1,15 +1,14 @@
+import string
 import urllib.request, urllib.error, urllib.parse
 import re
 import requests
 import PyPDF2
-import time
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC 
-
+from bs4 import BeautifulSoup
 """ 
     checking if there is already new protocol
     downlading protocols
@@ -60,46 +59,40 @@ class DataAcquisition:
             extracted_protocol += page.extractText()
         return extracted_protocol
 
-    def getHorseData(self):
-        self.url_horse = " https://koniewyscigowe.pl/horse/30003-herbatka"
-        #request = urllib.request.Request(self.url_horse, headers={'User-Agent': 'python-requests/2.21.0'})
-        #our_horse = urllib.request.urlopen(request)
-        #time.sleep(20)
-        #our_horse = our_horse.read().
-        ##our_horse = requests.get(self.url_horse, 'html.parser')
-        #content = driver.execute_script("return document.getElementsByTagName('html')[0].innerHTML")
-        #print(our_horse)
-        
-        # https://stackoverflow.com/questions/60072138/selenium-will-not-load-full-dom-tree-just-the-page-source
+    def get_horse_page(self):
+        self.url_horse = "https://koniewyscigowe.pl/horse/20899-a-dee-joe"
         options = webdriver.ChromeOptions() 
-        #options.add_argument("start-maximized")
-        #options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        #options.add_experimental_option('useAutomationExtension', False)
         driver = webdriver.Chrome(options=options, executable_path=r'C:\Users\48725\AppData\Local\Programs\Python\Python310\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe')
-        driver.get("https://koniewyscigowe.pl/horse/30003-herbatka")
-        #time.sleep(100)
+        driver.get(self.url_horse)
         WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "section.g-py-50")))
-        content = driver.execute_script("return document.getElementsByTagName('html')[0].innerHTML")
-        print(content)
-        
-        with open("outfile.txt", "wb") as outfile:
-	        outfile.write(content.encode('utf-8'))
-         
         content = driver.page_source.encode('utf-8')
-        print(content)
         
-        with open("outfile2.txt", "wb") as outfile2:
-	        outfile2.write(content)
+        with open ("horse_page.txt","wb") as horse_page:
+            horse_page.write(content)
+       
+    def get_horse_data(self):
+        with open("horse_page.txt","r",encoding="utf-8") as horse_page:    
+            info = BeautifulSoup(horse_page,"html.parser").find("tbody").find_all("tr")
+            main_horse_info = info[0].strong.string.split()
+            print(info[0].strong.string)
+            print(main_horse_info[3])
+            for pair in info[1:]:
+                column, value = pair.find("th").string, pair.find("td").string
+                if not value: value = pair.td.a.string
+                
+                print(column,value)
+            
 
-        #print(driver.page_source)
-        #driver.quit()
-        
+            
+    def get_horse_name(self):
+        doc = BeautifulSoup(outfile2,"html.parser")
         
             
 checker = DataAcquisition()
 #checker.getNewVersion()
 #checker.updateProtocolSet()
-checker.getHorseData()
+checker.get_horse_page()
 #print(checker.protocols_urls_list)
+checker.get_horse_data()
 
 #print(checker.getExtractedProtocol("https://www.pkwk.pl/wp-content/uploads/2022/08/Wyniki_WARSZAWA_21-08-2022_Dzien_026.pdf"))
