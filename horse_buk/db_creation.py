@@ -1,3 +1,5 @@
+""" Constains ORM's Classes which were used for creation DB """
+
 import sqlalchemy as sql
 from sqlalchemy import text, ForeignKey, MetaData, Integer, String, Float, Column
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
@@ -12,10 +14,7 @@ engine = sql.create_engine(f"mssql+pyodbc://@{SERVERNAME}{INSTANCENAME}/{DB}?dri
 con = engine.connect()
 metadata_obj = MetaData()
 Base = declarative_base()
-'''
-        Session = sessionmaker(bind = self.engine)
-        session = Session()
-'''
+
     
 class Jockeys(Base):
     __tablename__ = 'Jockeys'
@@ -24,21 +23,18 @@ class Jockeys(Base):
     surname = Column(String(50), nullable=False)
     race_place = relationship('Race_places', back_populates = "jockey")
 
-
 class Trainers(Base):
     __tablename__ = 'Trainers'
     ID = Column(Integer, primary_key=True) 
     name = Column(String(30), nullable=False)
     surname = Column(String(30), nullable=False)   
-    horses = relationship('Horses')
-
+    horses = relationship('Horses', back_populates = "trainer")
     
 class Owners(Base):
     __tablename__ = 'Owners'
     ID = Column(Integer, primary_key=True)
     name = Column(String(30), nullable=False)
     horses = relationship('Horses', back_populates = "owner")
-
 
 class Stables(Base):
     __tablename__ = 'Stables'
@@ -47,10 +43,8 @@ class Stables(Base):
     adress = Column(String(50))
     horses = relationship('Horses', back_populates = "stable")
 
-
 class Horses(Base):
     __tablename__ = 'Horses'
-
     ID = Column(Integer, primary_key=True)
     name = Column(String(30), nullable=False)
     coat = Column(String(30))
@@ -64,15 +58,10 @@ class Horses(Base):
     owner_ID = Column(Integer, ForeignKey(Owners.ID))
     stable_ID = Column(Integer, ForeignKey(Stables.ID))
     size = Column(String(30))
-    
-    #trainer = relationship('Trainers',back_populates = "horses")
+    trainer = relationship('Trainers',back_populates = "horses")
     stable = relationship('Stables',back_populates = "horses")
     owner = relationship('Owners',back_populates = "horses")
     race_place = relationship('Race_places',back_populates = "horse")
-
-    def __repr__(self):
-       return f"User(id={self.id!r}, name={self.name!r}, coat={self.coat!r})"
-
     
 class Race_days(Base):
     __tablename__ = 'Race_days'
@@ -83,24 +72,18 @@ class Race_days(Base):
     weather = Column(String(30))
     races = relationship('Race', back_populates = "race_day")
 
-    
 class Race(Base):
     __tablename__ = 'Race'
     ID = Column(Integer, primary_key=True)
     race_day_id = Column(Integer, ForeignKey(Race_days.ID), nullable=False)
-    track = Column(String(30), nullable=False)
-    horse_group = Column(String(50), nullable=False)
+    horse_group = Column(String(250), nullable=False)
     horse_age = Column(String(30), nullable=False)
     distance = Column(String(30), nullable=False)
-    time = Column(String(50))
-    finish = Column(String(30))
-    booking_rates_id = Column(Integer, nullable=False)
-    horse_age = Column(String(30))
-    
+    time = Column(String(100))
+    finish = Column(String(100))
     race_day = relationship('Race_days', back_populates = "races")
     places = relationship('Race_places', back_populates = "race")
     booking_rates = relationship('Booking_rates', back_populates = "race")
-
 
 class Race_places(Base):
     __tablename__ = 'Race_places'
@@ -109,28 +92,22 @@ class Race_places(Base):
     place = Column(Integer, nullable=False)
     horse_id = Column(Integer, ForeignKey(Horses.ID), nullable=False)
     jockey_id = Column(Integer, ForeignKey(Jockeys.ID), nullable=False)
-    
     race = relationship('Race', back_populates = "places")
     horse = relationship('Horses', back_populates = "race_place")
     jockey = relationship('Jockeys', back_populates = "race_place")
 
-    
 class Booking_rates(Base):
     __tablename__ = 'Booking_rates'
     ID = Column(Integer, primary_key=True)
     race_id = Column(Integer, ForeignKey(Race.ID), nullable=False)
     zwc = Column(Float, nullable=False)
-    pdk = Column(Float, nullable=False)
-    tri = Column(Float)
+    pdk = Column(Float)
+    trj = Column(Float)
+    tpl = Column(Float)
+    kwn = Column(Float)
     czw = Column(Float)
-    kwt = Column(Float)
     spt = Column(Float)
     race = relationship('Race', back_populates = "booking_rates")
 
    
 Base.metadata.create_all(engine)
-
-#Session = sessionmaker(bind = engine)
-#session = Session()
-#print(Race_places.race.has())
-

@@ -5,9 +5,8 @@ import re
 import requests
 import PyPDF2
 from selenium import webdriver
-import db_creation, db_insert
+import db_insert
 import db_creation as db
-
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
@@ -31,12 +30,12 @@ class DataAcquisition():
         response = urllib.request.urlopen(self.url_protocols)
         self.last_version = response.read().decode('UTF-8')
         
-    def isSthNew(self):
+    def is_sth_new(self):
         response = urllib.request.urlopen(self.url_protocols)
         self.checking_version = response.read().decode('UTF-8')
         return self.checking_version != self.last_version
     
-    def getNewVersion(self):
+    def get_new_version(self):
         if self.isSthNew(): 
             self.last_version = self.checking_version
             print("New version downladed")
@@ -44,23 +43,23 @@ class DataAcquisition():
         elif not self.isSthNew(): print(
             "No new version available")
         
-    def updateProtocolSet(self):
+    def update_protocol_set(self):
         pattern_url = re.compile('https:\/\/www\.pkwk\.pl\/wp-content\/uploads\/2022\/\d{1,}\/Wyniki_(WARSZAWA|SOPOT)_\d{1,}-\d{1,}-\d{4,}_Dzien_\d{3,}\.pdf')
         protocols_iterator = pattern_url.finditer(self.last_version)
         for protocol in protocols_iterator:
             if protocol not in self.protocols_urls_list: 
                 self.protocols_urls_list.append(protocol.group())
     
-    def getExtractedProtocol(self,url):
+    def get_extracted_protocol(self,url):
         response = requests.get(url)
         if response.status_code == 200:
             with open("currentPDF", "wb") as current_protocol:
                 current_protocol.write(response.content)
-                return(self.extractProtocol('currentPDF'))
+                return(self.extract_protocol('currentPDF'))
         else:
             print(response.status_code)
                 
-    def extractProtocol(self,pdf_protocol):
+    def extract_protocol(self,pdf_protocol):
         extracted_protocol = ""
         reader = PyPDF2.PdfFileReader(pdf_protocol)
         for page_number in range(reader.numPages):
@@ -75,7 +74,6 @@ class DataAcquisition():
         driver.get(self.url_horse)
         WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "section.g-py-50")))
         content = driver.page_source.encode('utf-8')
-        
         with open ("horse_page.txt","wb") as horse_page:
             horse_page.write(content)
        
@@ -131,8 +129,7 @@ class DataAcquisition():
                                    , horse_father_ID = horse_father_ID, horse_mother_ID = horse_mother_ID
                                    , horse_trainer_ID = horse_trainer_ID, horse_owner_ID = horse_owner_ID
                                    , horse_stable_ID = horse_stable_ID, horse_size = size)
-
-            
+         
     def get_race_day(self, page_text):
         rd_date = re.findall(r", .*",page_text)[0]
         rd_date = rd_date[1:].rstrip().lstrip()
@@ -140,27 +137,98 @@ class DataAcquisition():
         rd_track = rd_track_info[8].rstrip().lstrip()
         rd_track_condition = re.search(r", .*",rd_track_info[12]).group()[2:]
         rd_weather = re.search(r".*C\)",rd_track_info[12]).group()
-        print(rd_track_condition, rd_track, rd_weather)
-        db_insert.insert_race_day(rd_date=rd_date, rd_track=rd_track, rd_track_condition=rd_track_condition, rd_weather=rd_weather)
+        session = Session()
+        print(rd_date,rd_track)
+        #db_insert.insert_race_day(rd_date=rd_date, rd_track=rd_track, rd_track_condition=rd_track_condition, rd_weather=rd_weather)
+        session = Session()
+        query = session.query(db.Race_days.ID).filter((db.Race_days.date == str(rd_date)) & (db.Race_days.track == rd_track)).first()
         
         pattern_race = re.compile('((\d \(\d{1,3}\)(.+\n){5,25})ZWC.+)\n')
         race_iterator = pattern_race.finditer(page_text)
-        for race_data in race_iterator:
-            pass
-            #print(race_data.group())
+        for race_info in race_iterator:
+            if len(re.findall("ZWC",race_info.group())) > 1:
+                pattern_race_2 = re.compile(r'((\d \(\d{1,3}\)(.+\n){5,17})ZWC.+)\n')
+                race_iterator_2 = pattern_race_2.finditer(race_info.group())
+                for race_info_2 in race_iterator_2:
+                    self.get_race(race_info_2.group(), int(query[0]))
+            else:                
+                self.get_race(race_info.group(),int(query[0]))
     
-    def get_race(self, race_info):
-        pass
+    def get_race(self, race_info, race_race_day_id):
+        race_horse_age=re.search(r"\d{1}-letnich",race_info).group()[0]
+        race_distance=re.search(r"\d{4}m",race_info).group()
+        race_horse_group=re.search(r"koni [\s\S]+m *\)|handikapowa [\s\S]+m *\)",race_info).group()
+        race_horse_group = " ".join(race_horse_group.split()[1:(len(race_horse_group.split())-1)])
+        race_time_finish = re.search(r"Czas:.*",race_info).group()
+        race_time = re.search(r".*\),",race_time_finish).group()[6:-1]
+        race_finish = re.search(r"\),.*",race_time_finish).group()[3:]
+        race_booking_rates = re.search(r"ZWC.*",race_info).group()
+        session = Session()
+        #db_insert.insert_race(race_race_day_ID=race_race_day_id, race_horse_group=race_horse_group , race_horse_age=race_horse_age
+        #                      , race_distance=race_distance, race_time=race_time,race_finish=race_finish)    
+        session = Session()
+        race_id = session.query(db.Race.ID).filter(db.Race.horse_group == race_horse_group).first()
+        self.get_booking_rates(race_booking_rates, race_id[0])
+        self.get_race_places(race_info, race_id[0])
     
-    def get_booking_rates():
-        pass        
+    def get_race_places(self, race_info, race_id):
+        #print(race_info)
+        pattern_place = re.compile(r'^\d{1,2}(.+\n){0,0}.*●.*|^\d{1,2}(.+\n){0,2}.*●.*', flags=re.MULTILINE)
+        #pattern_place = re.compile(r"\d{1,2}(.+\n){0,2}.*●.*")
+        place_info_iter = pattern_place.finditer(race_info)
+        for place_info in place_info_iter:
+            #print(place_info.group())
+            rp_place = int(place_info.group()[0])
+            rp_horse_ID = re.search(r"\).*[\n|●]",place_info.group()).group()[2:-1].strip()
+            try: 
+                rp_horse_ID = re.search(r".*\(\w{2,3}\)",rp_horse_ID).group().split()[0]
+                print("******")
+            except: pass
+            #print(place_info.group())
+            rp_jockey_ID = re.search(r"●.*\w{1,2}\. {0,2}\S{2,26}",place_info.group(),flags=re.MULTILINE).group().strip()
+            print(rp_horse_ID)
+            print(rp_jockey_ID)
+            
+        #db_insert.insert_race_place(rp_race_ID=race_id, rp_place= , rp_horse_ID= , rp_jockey_ID=)
+    
+    def get_booking_rates(self, br_info, race_id):
+        return
+        br_zwc = None
+        br_pdk = None
+        br_trj = None
+        br_tpl = None
+        br_kwn = None
+        br_czw = None
+        br_spt = None
+        br_list = br_info.split()
+        for i, value in enumerate (br_list):
+            if i%2 == 1: continue
+            if value == "ZWC":
+                br_zwc = float(br_list[i+1].replace(",","."))                
+            elif value == "PDK":
+                br_pdk = float(br_list[i+1].replace(",","."))         
+            elif value == "TRJ":
+                br_trj = float(br_list[i+1].replace(",","."))         
+            elif value == "TPL":
+                br_tpl = float(br_list[i+1].replace(",","."))         
+            elif value == "KWN":
+                br_kwn = float(br_list[i+1].replace(",","."))         
+            elif value == "CZW":
+                br_czw = float(br_list[i+1].replace(",","."))         
+            elif value == "SPT":
+                br_spt = float(br_list[i+1].replace(",","."))         
+        db_insert.insert_booking_rates(br_race_id=race_id, br_zwc=br_zwc, br_pdk=br_pdk, br_trj=br_trj, br_tpl=br_tpl,
+                                       br_kwn=br_kwn, br_czw=br_czw,br_spt=br_spt)      
+        
+        
+              
 checker = DataAcquisition()
-#checker.getNewVersion()
+#checker.getNewVersion(
 #checker.updateProtocolSet()
 #checker.get_horse_page()
 #print(checker.protocols_urls_list)
 #checker.get_horse_data()
-#checker.getExtractedProtocol("https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_25-06-2022_Dzien_016.pdf")
-checker.get_race_day(checker.getExtractedProtocol("https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_07-05-2022_Dzien_004.pdf")
+#checker.get_extracted_protocol("https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_25-06-2022_Dzien_016.pdf")
+checker.get_race_day(checker.get_extracted_protocol("https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_07-05-2022_Dzien_004.pdf")
 )
-#print(checker.getExtractedProtocol("https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_25-06-2022_Dzien_016.pdf"))
+#print(checker.get_extrected_protocol("https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_25-06-2022_Dzien_016.pdf"))
