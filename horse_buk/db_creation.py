@@ -10,7 +10,7 @@ SERVERNAME = "DESKTOP-1SHBR4M"
 INSTANCENAME = "\SQLEXPRESS"
 DB = "horse_buk_db"
 
-engine = sql.create_engine(f"mssql+pyodbc://@{SERVERNAME}{INSTANCENAME}/{DB}?driver={DRIVER}")
+engine = sql.create_engine(f"mssql+pyodbc://@{SERVERNAME}{INSTANCENAME}/{DB}?driver={DRIVER}", pool_size=50)
 con = engine.connect()
 metadata_obj = MetaData()
 Base = declarative_base()

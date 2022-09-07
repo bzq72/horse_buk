@@ -1,28 +1,20 @@
-import string
-from unicodedata import name
+"""Contain methods for acquisition data from race protocols (pkwk.pl)"""
+
 import urllib.request, urllib.error, urllib.parse
 import re
 import requests
 import PyPDF2
-from selenium import webdriver
 import db_insert
 import db_creation as db
 
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait 
-from selenium.webdriver.support import expected_conditions as EC 
-from bs4 import BeautifulSoup
 from sqlalchemy.orm import sessionmaker
+
+import data_acq_kw as dck
 
 
 Session = sessionmaker(bind = db.engine)
-""" 
-    checking if there is already new protocol
-    downlading protocols
-    https://www.pkwk.pl/language/pl/sprawozdania-2022/ 
-"""
 
-class DataAcquisition():
+class data_acq_pkwk():
     
     def __init__(self):
         self.protocols_urls_list = []
@@ -67,70 +59,8 @@ class DataAcquisition():
             extracted_protocol += page.extractText()
         return extracted_protocol
 
-    def get_horse_page(self):
-        self.url_horse = "https://koniewyscigowe.pl/horse/23947-gabonn"
-        options = webdriver.ChromeOptions() 
-        driver = webdriver.Chrome(options=options, executable_path=r'C:\Users\48725\AppData\Local\Programs\Python\Python310\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe')
-        driver.get(self.url_horse)
-        WebDriverWait(driver, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "section.g-py-50")))
-        content = driver.page_source.encode('utf-8')
-        with open ("horse_page.txt","wb") as horse_page:
-            horse_page.write(content)
-       
-    def get_horse_data(self):
-        with open("horse_page.txt","r",encoding="utf-8") as horse_page:    
-            page = BeautifulSoup(horse_page,"html.parser")
-            horse_name = str(page.h1.string)
-            info = page.find("tbody").find_all("tr")
-            main_horse_info = info[0].strong.string.split()
-            horse_coat, horse_gender, horse_brith_date = main_horse_info[0], main_horse_info[1], main_horse_info[3]
-            for pair in info[1:]:
-                column, value = pair.find("th").string, pair.find("td").string
-                if not value: value = pair.td.a.string
-                if column == "Rasa:": horse_breed = value
-                elif column == "Pochodzenie:": horse_origin = value
-                elif column == "Ojciec:": horse_father_ID = 1
-                elif column   == "Matka:": horse_mother_ID = 1
-                elif column == "Trener:": 
-                        value = value.split()
-                        session = Session()
-                        try: 
-                            query = session.query(db.Trainers.ID).filter(db.Trainers.surname == str(value[1])).first()
-                            horse_trainer_ID = query[0]
-                        except:
-                            db_insert.insert_trainer(trainer_name=str(value[0]), trainer_surname=str(value[1]))
-                            query = session.query(db.Trainers.ID).filter(db.Trainers.surname == str(value[1])).first()
-                            horse_trainer_ID = query[0]
-                        
-                elif column == "Właściciel:": 
-                        session = Session()
-                        try: 
-                            query = session.query(db.Owners.ID).filter(db.Owners.name == str(value)).first()
-                            horse_owner_ID = query[0]
-                        except:
-                            db_insert.insert_owner(owner_name=str(value))
-                            query = session.query(db.Owners.ID).filter(db.Owners.name == str(value)).first()
-                            horse_owner_ID = query[0]
-                            
-                elif column == "Stajnia:": 
-                        session = Session()
-                        try: 
-                            query = session.query(db.Stables.ID).filter(db.Stables.name == str(value)).first()
-                            horse_stable_ID = query[0]
-                        except:
-                            db_insert.insert_stable(stable_name=str(value), stable_adress=None)
-                            query = session.query(db.Stables.ID).filter(db.Stables.name == str(value)).first()
-                            horse_stable_ID = query[0] 
-                                               
-                elif column == "Wymiary:": size = value
-
-            db_insert.insert_horse(horse_name = horse_name, horse_gender = horse_gender, horse_brith_date = horse_brith_date
-                                   , horse_coat = horse_coat, horse_breed = horse_breed, horse_origin = horse_origin
-                                   , horse_father_ID = horse_father_ID, horse_mother_ID = horse_mother_ID
-                                   , horse_trainer_ID = horse_trainer_ID, horse_owner_ID = horse_owner_ID
-                                   , horse_stable_ID = horse_stable_ID, horse_size = size)
-         
-    def get_race_day(self, page_text):
+    def obtain_race_day_info(self, page_text):
+        """race day data contain also datas about race, booking rates and race places"""
         rd_date = re.findall(r", .*",page_text)[0]
         rd_date = rd_date[1:].rstrip().lstrip()
         rd_track_info = re.findall(r".*",page_text)
@@ -139,7 +69,7 @@ class DataAcquisition():
         rd_weather = re.search(r".*C\)",rd_track_info[12]).group()
         session = Session()
         print(rd_date,rd_track)
-        #db_insert.insert_race_day(rd_date=rd_date, rd_track=rd_track, rd_track_condition=rd_track_condition, rd_weather=rd_weather)
+        db_insert.insert_race_day(rd_date=rd_date, rd_track=rd_track, rd_track_condition=rd_track_condition, rd_weather=rd_weather)
         session = Session()
         query = session.query(db.Race_days.ID).filter((db.Race_days.date == str(rd_date)) & (db.Race_days.track == rd_track)).first()
         
@@ -150,11 +80,12 @@ class DataAcquisition():
                 pattern_race_2 = re.compile(r'((\d \(\d{1,3}\)(.+\n){5,17})ZWC.+)\n')
                 race_iterator_2 = pattern_race_2.finditer(race_info.group())
                 for race_info_2 in race_iterator_2:
-                    self.get_race(race_info_2.group(), int(query[0]))
+                    self.obtain_race_info(race_info_2.group(), int(query[0]))
             else:                
-                self.get_race(race_info.group(),int(query[0]))
+                self.obtain_race_info(race_info.group(),int(query[0]))
     
-    def get_race(self, race_info, race_race_day_id):
+    def obtain_race_info(self, race_info, race_race_day_id):
+        """race data contain also datas about booking rates and race places"""
         race_horse_age=re.search(r"\d{1}-letnich",race_info).group()[0]
         race_distance=re.search(r"\d{4}m",race_info).group()
         race_horse_group=re.search(r"koni [\s\S]+m *\)|handikapowa [\s\S]+m *\)",race_info).group()
@@ -164,35 +95,56 @@ class DataAcquisition():
         race_finish = re.search(r"\),.*",race_time_finish).group()[3:]
         race_booking_rates = re.search(r"ZWC.*",race_info).group()
         session = Session()
-        #db_insert.insert_race(race_race_day_ID=race_race_day_id, race_horse_group=race_horse_group , race_horse_age=race_horse_age
-        #                      , race_distance=race_distance, race_time=race_time,race_finish=race_finish)    
+        db_insert.insert_race(race_race_day_ID=race_race_day_id, race_horse_group=race_horse_group , race_horse_age=race_horse_age
+                              , race_distance=race_distance, race_time=race_time,race_finish=race_finish)    
         session = Session()
-        race_id = session.query(db.Race.ID).filter(db.Race.horse_group == race_horse_group).first()
+        race_id = session.query(db.Race.ID).filter((db.Race.horse_group == race_horse_group) & (db.Race.time ==race_time)).first()
         self.get_booking_rates(race_booking_rates, race_id[0])
         self.get_race_places(race_info, race_id[0])
     
     def get_race_places(self, race_info, race_id):
         #print(race_info)
         pattern_place = re.compile(r'^\d{1,2}(.+\n){0,0}.*●.*|^\d{1,2}(.+\n){0,2}.*●.*', flags=re.MULTILINE)
-        #pattern_place = re.compile(r"\d{1,2}(.+\n){0,2}.*●.*")
         place_info_iter = pattern_place.finditer(race_info)
         for place_info in place_info_iter:
             #print(place_info.group())
             rp_place = int(place_info.group()[0])
-            rp_horse_ID = re.search(r"\).*[\n|●]",place_info.group()).group()[2:-1].strip()
+            rp_horse = re.search(r"\).*[\n|●]",place_info.group()).group()[2:-1].strip()
             try: 
-                rp_horse_ID = re.search(r".*\(\w{2,3}\)",rp_horse_ID).group().split()[0]
-                print("******")
+                rp_horse = re.search(r"^[A-Z]{1}.{,35}\)",rp_horse, flags=re.MULTILINE).group().strip()[0:-5].strip()
             except: pass
-            #print(place_info.group())
-            rp_jockey_ID = re.search(r"●.*\w{1,2}\. {0,2}\S{2,26}",place_info.group(),flags=re.MULTILINE).group().strip()
-            print(rp_horse_ID)
-            print(rp_jockey_ID)
+            query_horse = (db.Horses.name == str(rp_horse.strip()))
+            if db_insert.is_exist(db.Horses,query_horse):
+                session = Session()
+                rp_horse_ID = session.query(db.Horses.ID).filter(db.Horses.name == rp_horse).first()[0]
+            else: 
+                obj = dck.data_acq_kw()
+                obj.get_horse_data(rp_horse)
+                #dataget_horse_data(value)
+                session = Session()
+                try: rp_horse_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(rp_horse).strip()).first()[0]
+                except: rp_horse_ID = 25
             
-        #db_insert.insert_race_place(rp_race_ID=race_id, rp_place= , rp_horse_ID= , rp_jockey_ID=)
+            rp_jockey = re.search(r"●.*\w{1,2}\. {0,2}\S{2,26}",place_info.group(),flags=re.MULTILINE).group().strip()
+            rp_jockey = re.search(r"[A-Z]+\.( )*\S*",rp_jockey,flags=re.MULTILINE).group().strip()
+            rp_jockey_name = re.search(r"[A-Z]+\.",rp_jockey,flags=re.MULTILINE).group().strip()
+            rp_jockey_surname = re.search(r"\.( )*\S*",rp_jockey,flags=re.MULTILINE).group().strip()
+
+            query_jockeys = ((db.Jockeys.name == rp_jockey_name) & (db.Jockeys.surname == rp_jockey_surname))
+            
+            if db_insert.is_exist(db.Jockeys,query_jockeys):
+                session = Session()
+                rp_jockey_ID = session.query(db.Jockeys.ID).filter(query_jockeys).first()[0]
+            else: 
+                db_insert.insert_jockey(jockey_name=rp_jockey_name,jockey_surname=rp_jockey_surname)
+                rp_jockey_ID = session.query(db.Jockeys.ID).filter(query_jockeys).first()[0]               
+                
+            print(rp_horse_ID)
+            #print(rp_jockey_ID)      
+                  
+            db_insert.insert_race_place(rp_race_ID=int(race_id), rp_place=int(rp_place) , rp_horse_ID=rp_horse_ID , rp_jockey_ID=rp_jockey_ID)
     
     def get_booking_rates(self, br_info, race_id):
-        return
         br_zwc = None
         br_pdk = None
         br_trj = None
@@ -222,13 +174,13 @@ class DataAcquisition():
         
         
               
-checker = DataAcquisition()
+checker = data_acq_pkwk()
 #checker.getNewVersion(
 #checker.updateProtocolSet()
 #checker.get_horse_page()
 #print(checker.protocols_urls_list)
 #checker.get_horse_data()
 #checker.get_extracted_protocol("https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_25-06-2022_Dzien_016.pdf")
-checker.get_race_day(checker.get_extracted_protocol("https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_07-05-2022_Dzien_004.pdf")
+checker.obtain_race_day_info(checker.get_extracted_protocol("https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_07-05-2022_Dzien_004.pdf")
 )
 #print(checker.get_extrected_protocol("https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_25-06-2022_Dzien_016.pdf"))
