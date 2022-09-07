@@ -43,15 +43,12 @@ class data_acq_kw():
         horse_owner_ID = None
         horse_stable_ID = None
         size = None
-        #try:  
-        print(name)
         path_to_file = f'horse_page_{name}.txt'
         path = Path(path_to_file)
         if path.is_file():
             with open(f"horse_page_{name}.txt","r",encoding="utf-8") as horse_page:    
                 page = BeautifulSoup(horse_page,"html.parser")
                 horse_name = str(page.h1.string)
-                print(horse_page.name)
                 info = page.find("tbody").find_all("tr")
                 main_horse_info = info[0].strong.string.split()
                 try: horse_coat, horse_gender, horse_brith_date = main_horse_info[0], main_horse_info[1], main_horse_info[3]
@@ -68,7 +65,6 @@ class data_acq_kw():
                     column, value = pair.find("th").string, pair.find("td").string
                     if value in ["-",' ','\n']: continue
                     if not value: value = pair.td.a.string
-                    #print(column,value)
                     if column == "Rasa:": horse_breed = value
                     elif column == "Pochodzenie:": horse_origin = value
                     elif column == "Trener:": 
@@ -87,7 +83,6 @@ class data_acq_kw():
                             session = Session()
                             try: 
                                 query = session.query(db.Owners.ID).filter(db.Owners.name == str(value)).first()
-                                print(query)
                                 horse_owner_ID = query[0]
                             except:
                                 db_insert.insert_owner(owner_name=str(value))
@@ -107,7 +102,6 @@ class data_acq_kw():
                     elif column == "Wymiary:": 
                         size = value
                     elif column == "Ojciec:": 
-                        print(value)
                         query = (db.Horses.name == str(value))
                         if db_insert.is_exist(db.Horses,query):
                             session = Session()

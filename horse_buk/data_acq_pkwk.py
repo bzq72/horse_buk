@@ -32,8 +32,7 @@ class data_acq_pkwk():
             self.last_version = self.checking_version
             print("New version downladed")
         # next line only for debuging
-        elif not self.isSthNew(): print(
-            "No new version available")
+        elif not self.isSthNew(): print("No new version available")
         
     def update_protocol_set(self):
         pattern_url = re.compile('https:\/\/www\.pkwk\.pl\/wp-content\/uploads\/2022\/\d{1,}\/Wyniki_(WARSZAWA|SOPOT)_\d{1,}-\d{1,}-\d{4,}_Dzien_\d{3,}\.pdf')
@@ -68,7 +67,6 @@ class data_acq_pkwk():
         rd_track_condition = re.search(r", .*",rd_track_info[12]).group()[2:]
         rd_weather = re.search(r".*C\)",rd_track_info[12]).group()
         session = Session()
-        print(rd_date,rd_track)
         db_insert.insert_race_day(rd_date=rd_date, rd_track=rd_track, rd_track_condition=rd_track_condition, rd_weather=rd_weather)
         session = Session()
         query = session.query(db.Race_days.ID).filter((db.Race_days.date == str(rd_date)) & (db.Race_days.track == rd_track)).first()
@@ -103,11 +101,9 @@ class data_acq_pkwk():
         self.get_race_places(race_info, race_id[0])
     
     def get_race_places(self, race_info, race_id):
-        #print(race_info)
         pattern_place = re.compile(r'^\d{1,2}(.+\n){0,0}.*●.*|^\d{1,2}(.+\n){0,2}.*●.*', flags=re.MULTILINE)
         place_info_iter = pattern_place.finditer(race_info)
         for place_info in place_info_iter:
-            #print(place_info.group())
             rp_place = int(place_info.group()[0])
             rp_horse = re.search(r"\).*[\n|●]",place_info.group()).group()[2:-1].strip()
             try: 
@@ -139,9 +135,6 @@ class data_acq_pkwk():
                 db_insert.insert_jockey(jockey_name=rp_jockey_name,jockey_surname=rp_jockey_surname)
                 rp_jockey_ID = session.query(db.Jockeys.ID).filter(query_jockeys).first()[0]               
                 
-            print(rp_horse_ID)
-            #print(rp_jockey_ID)      
-                  
             db_insert.insert_race_place(rp_race_ID=int(race_id), rp_place=int(rp_place) , rp_horse_ID=rp_horse_ID , rp_jockey_ID=rp_jockey_ID)
     
     def get_booking_rates(self, br_info, race_id):
