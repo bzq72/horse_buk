@@ -17,8 +17,9 @@ from sqlalchemy.orm import sessionmaker
 Session = sessionmaker(bind = db.engine)
 
 class data_acq_kw():
-    def get_horse_page(self, name):
-        self.url_horse = f"https://koniewyscigowe.pl/horse/szukaj?search={name}"
+    def get_horse_page(self, name, parent_href = None):
+        if not parent_href: self.url_horse = f"https://koniewyscigowe.pl/horse/szukaj?search={name}"
+        else: self.url_horse = f"https://koniewyscigowe.pl{parent_href}"
         options = webdriver.ChromeOptions() 
         driver = webdriver.Chrome(options=options, executable_path=r'C:\Users\48725\AppData\Local\Programs\Python\Python310\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe')
         driver.get(self.url_horse)
@@ -28,11 +29,11 @@ class data_acq_kw():
         with open (f"horse_page_{name}.txt","wb") as horse_page:
             horse_page.write(content)
        
-    def get_horse_data(self, name):
+    def get_horse_data(self, name, href_parent = None):
         query = db.Horses.name == name
         if db_insert.is_exist(db.Horses,query): return
         if name in ["_",""," "]:return
-        self.get_horse_page(name)
+        self.get_horse_page(name, href_parent)
         horse_name = None
         horse_gender = None
         horse_brith_date = None
@@ -121,7 +122,14 @@ class data_acq_kw():
                             session = Session()
                             horse_father_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
                         else: 
-                            self.get_horse_data(value)
+                            try: parent_href = pair.find('a', href=True)['href'] 
+                            except: parent_href = None  
+                            try: 
+                                int(parent_href)
+                                parent_href = f'/horse/{parent_href}'
+                                print(parent_href)
+                            except: pass
+                            self.get_horse_data(value, parent_href)
                             session = Session()
                             try: horse_father_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
                             except: horse_father_ID = None
@@ -132,7 +140,14 @@ class data_acq_kw():
                             session = Session()
                             horse_mother_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
                         else: 
-                            self.get_horse_data(value)
+                            try: parent_href = pair.find('a', href=True)['href'] 
+                            except: parent_href = None  
+                            try: 
+                                int(parent_href)
+                                parent_href = f'/horse/{parent_href}'
+                                print(parent_href)
+                            except: pass
+                            self.get_horse_data(value, parent_href)
                             session = Session()
                             try: horse_mother_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
                             except: horse_mother_ID = None
@@ -147,9 +162,13 @@ class data_acq_kw():
  
  
 #checker = data_acq_kw()
-#checker.get_horse_data("A Nihala")
+#checker.get_horse_data("Chibani")
 """session = Session()
 ask = session.query(db.Horses.ID).filter(db.Horses.name == "Hilal Muscat").first()[0]
 print(ask)
 """
 # https://koniewyscigowe.pl/horse/12892-abadan
+
+
+
+#get_horse_data("Chibani")
