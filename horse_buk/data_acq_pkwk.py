@@ -43,6 +43,7 @@ class data_acq_pkwk():
     
     def get_extracted_protocol(self,url):
         response = requests.get(url)
+        response.encoding = response.apparent_encoding
         if response.status_code == 200:
             with open("currentPDF", "wb") as current_protocol:
                 current_protocol.write(response.content)
@@ -56,6 +57,8 @@ class data_acq_pkwk():
         for page_number in range(reader.numPages):
             page = reader.getPage(page_number)
             extracted_protocol += page.extractText()
+        extracted_protocol = extracted_protocol.replace(" ż","ż").replace(" Ż","Ż").replace(" ń","ń").replace(" ą", "ą")
+        extracted_protocol = extracted_protocol.replace(" ęż ", "ęż")
         return extracted_protocol
 
     def obtain_race_day_info(self, page_text):
@@ -174,6 +177,7 @@ checker = data_acq_pkwk()
 #print(checker.protocols_urls_list)
 #checker.get_horse_data()
 #checker.get_extracted_protocol("https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_25-06-2022_Dzien_016.pdf")
-checker.obtain_race_day_info(checker.get_extracted_protocol("https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_07-05-2022_Dzien_004.pdf")
-)
+checker.obtain_race_day_info(checker.get_extracted_protocol("https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_07-05-2022_Dzien_004.pdf"))
 #print(checker.get_extrected_protocol("https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_25-06-2022_Dzien_016.pdf"))
+
+#print(checker.get_extracted_protocol("https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_07-05-2022_Dzien_004.pdf"))

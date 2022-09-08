@@ -146,8 +146,8 @@ class data_acq_kw():
             os.remove(f"horse_page_{name}.txt")
  
  
-checker = data_acq_kw()
-checker.get_horse_data("A Nihala")
+#checker = data_acq_kw()
+#checker.get_horse_data("A Nihala")
 """session = Session()
 ask = session.query(db.Horses.ID).filter(db.Horses.name == "Hilal Muscat").first()[0]
 print(ask)
