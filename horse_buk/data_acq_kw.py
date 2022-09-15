@@ -6,6 +6,7 @@ from selenium import webdriver
 import db_insert
 import db_creation as db
 import os
+from datetime import datetime
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
@@ -42,6 +43,7 @@ class data_acq_kw():
         horse_trainer_ID = None
         horse_owner_ID = None
         horse_stable_ID = None
+        horse_coat = None
         size = None
         path_to_file = f'horse_page_{name}.txt'
         path = Path(path_to_file)
@@ -50,7 +52,19 @@ class data_acq_kw():
                 page = BeautifulSoup(horse_page,"html.parser")
                 horse_name = str(page.h1.string)
                 info = page.find("tbody").find_all("tr")
-                main_horse_info = info[0].strong.string.split()
+                main_horse_info = info[0].strong.string.lower().split()
+                horse_coat_types = ["gnida","gniady","kasztanowata","kasztanowaty","siwa","siwy", "ciemnogniada", "ciemnogniady"]
+                horse_gender_types = ["klacz","ogier","walach"]
+                for i_info in main_horse_info:
+                    if i_info in horse_coat_types: horse_coat = i_info
+                    elif i_info in horse_gender_types: horse_gender = i_info
+                    else: 
+                        try: horse_brith_date = datetime.strptime(i_info, "%d.%m.%Y")
+                        except: 
+                                try: horse_brith_date = datetime.strptime(i_info, "%Y")
+                                except: print(f"***nie bangla dla {i_info} ***")
+                        
+                """
                 try: horse_coat, horse_gender, horse_brith_date = main_horse_info[0], main_horse_info[1], main_horse_info[3]
                 except: 
                     horse_brith_date = None
@@ -60,7 +74,7 @@ class data_acq_kw():
                         try: horse_coat = main_horse_info[0]
                         except: horse_coat = None
 
-
+"""
                 for pair in info[1:]:
                     column, value = pair.find("th").string, pair.find("td").string
                     if value in ["-",' ','\n']: continue
@@ -133,7 +147,7 @@ class data_acq_kw():
  
  
 #checker = data_acq_kw()
-#checker.get_horse_data("Abadan")
+#checker.get_horse_data("A Nihala")
 """session = Session()
 ask = session.query(db.Horses.ID).filter(db.Horses.name == "Hilal Muscat").first()[0]
 print(ask)
