@@ -7,32 +7,71 @@ import db_insert
 import db_creation as db
 import os
 from datetime import datetime
+from unidecode import unidecode
+
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC 
 from bs4 import BeautifulSoup
 from sqlalchemy.orm import sessionmaker
+import time
 
 Session = sessionmaker(bind = db.engine)
 
 class data_acq_kw():
+    def find_right_horse(self, name, search_page):
+        """selecting right horses href from few serching results"""
+        href = None
+        with open (f"searcher.txt","wb") as searcher: searcher.write(search_page)
+        with open (f"searcher.txt","rb") as searcher:
+            page = BeautifulSoup(searcher,"html.parser")
+            pageee = str(page.header).lower()
+            info = page.find("tbody").find_all("tr")
+            last_year = year = 0
+            for value in info:
+                try: year = int(value.find_all("td")[2].string[-4:])
+                except: year = 0
+                if not href: href = value.find('a', href=True)['href']
+                if last_year < year:
+                    last_year = year
+                    href = value.find('a', href=True)['href']
+        self.get_horse_data(name, href)
+        
+    
     def get_horse_page(self, name, parent_href = None):
+        """getting horse page"""
         if not parent_href: self.url_horse = f"https://koniewyscigowe.pl/horse/szukaj?search={name}"
-        else: self.url_horse = f"https://koniewyscigowe.pl{parent_href}"
+        else: 
+            self.url_horse = f"https://koniewyscigowe.pl{parent_href}"
         options = webdriver.ChromeOptions() 
         driver = webdriver.Chrome(options=options, executable_path=r'C:\Users\48725\AppData\Local\Programs\Python\Python310\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe')
         driver.get(self.url_horse)
         try: WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "section.g-py-50")))
-        except: return
+        except: 
+            s_results = driver.page_source.encode('utf-8')
+            hrefs = f'a href="/horse'.encode("utf-8")
+            if not hrefs in s_results: return
+            else:
+                self.find_right_horse(name,s_results)
+                return
         content = driver.page_source.encode('utf-8')
+        pageee = str(content)
+        counter = pageee.count(name)
+        if counter > 6: return
         with open (f"horse_page_{name}.txt","wb") as horse_page:
             horse_page.write(content)
        
     def get_horse_data(self, name, href_parent = None):
+        """getting informations about horses: name, gender, broth date, breed, origin, parents etc.
+        and putting them into database"""
+        if "'oa'" in name.lower(): name = name[0:-1]
+        if "'" in name: name = name.replace("'","''")
         query = db.Horses.name == name
-        if db_insert.is_exist(db.Horses,query): return
-        if name in ["_",""," "]:return
+        if db_insert.is_exist(db.Horses,query): 
+            return
+        if name in ["_",""," "]:
+            return
         self.get_horse_page(name, href_parent)
         horse_name = None
         horse_gender = None
@@ -63,19 +102,8 @@ class data_acq_kw():
                         try: horse_brith_date = datetime.strptime(i_info, "%d.%m.%Y")
                         except: 
                                 try: horse_brith_date = datetime.strptime(i_info, "%Y")
-                                except: print(f"***nie bangla dla {i_info} ***")
-                        
-                """
-                try: horse_coat, horse_gender, horse_brith_date = main_horse_info[0], main_horse_info[1], main_horse_info[3]
-                except: 
-                    horse_brith_date = None
-                    try: horse_coat, horse_gender = main_horse_info[0], main_horse_info[1]
-                    except:
-                        horse_gender = None
-                        try: horse_coat = main_horse_info[0]
-                        except: horse_coat = None
+                                except: pass
 
-"""
                 for pair in info[1:]:
                     column, value = pair.find("th").string, pair.find("td").string
                     if value in ["-",' ','\n']: continue
@@ -90,9 +118,11 @@ class data_acq_kw():
                                 query = session.query(db.Trainers.ID).filter(db.Trainers.surname == str(value[1])).first()
                                 horse_trainer_ID = query[0]
                             except:
-                                db_insert.insert_trainer(trainer_name=str(value[0]), trainer_surname=str(value[1]))
-                                query = session.query(db.Trainers.ID).filter(db.Trainers.surname == str(value[1])).first()
-                                horse_trainer_ID = query[0]
+                                try:    
+                                    db_insert.insert_trainer(trainer_name=str(value[0]), trainer_surname=str(value[1]))
+                                    query = session.query(db.Trainers.ID).filter(db.Trainers.surname == str(value[1])).first()
+                                    horse_trainer_ID = query[0]
+                                except: breakpoint()
                             
                     elif column == "Właściciel:": 
                             session = Session()
@@ -101,8 +131,9 @@ class data_acq_kw():
                                 horse_owner_ID = query[0]
                             except:
                                 db_insert.insert_owner(owner_name=str(value))
-                                query = session.query(db.Owners.ID).filter(db.Owners.name == str(value)[:20]).first()
-                                horse_owner_ID = query[0]
+                                query = session.query(db.Owners.ID).filter(db.Owners.name == str(value)).first()
+                                try: horse_owner_ID = query[0]
+                                except: breakpoint()
                                 
                     elif column == "Stajnia:": 
                             session = Session()
@@ -112,7 +143,8 @@ class data_acq_kw():
                             except:
                                 db_insert.insert_stable(stable_name=str(value).strip(), stable_adress=None)
                                 query = session.query(db.Stables.ID).filter(db.Stables.name == str(value).strip()).first()
-                                horse_stable_ID = query[0] 
+                                try: horse_stable_ID = query[0] 
+                                except: horse_stable_ID = None # to fix
                                                 
                     elif column == "Wymiary:": 
                         size = value
@@ -122,17 +154,23 @@ class data_acq_kw():
                             session = Session()
                             horse_father_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
                         else: 
-                            try: parent_href = pair.find('a', href=True)['href'] 
-                            except: parent_href = None  
                             try: 
-                                int(parent_href)
-                                parent_href = f'/horse/{parent_href}'
-                                print(parent_href)
-                            except: pass
+                                parent_href = pair.find('a', href=True)['href'] 
+                                try: 
+                                    int(parent_href)
+                                    parent_href = f'/horse/{parent_href}'
+                                except: parent_href = f'/{parent_href}'
+                            except: parent_href = None  
+                            
                             self.get_horse_data(value, parent_href)
                             session = Session()
-                            try: horse_father_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
-                            except: horse_father_ID = None
+                            while not horse_father_ID:
+                                try: 
+                                    horse_father_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
+                                except: 
+                                    value = value[0:-1]
+                                    if len(value) == 1:
+                                        break
                             
                     elif column   == "Matka:":
                         query = (db.Horses.name == str(value))
@@ -140,17 +178,23 @@ class data_acq_kw():
                             session = Session()
                             horse_mother_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
                         else: 
-                            try: parent_href = pair.find('a', href=True)['href'] 
-                            except: parent_href = None  
-                            try: 
-                                int(parent_href)
-                                parent_href = f'/horse/{parent_href}'
-                                print(parent_href)
-                            except: pass
+                            try:
+                                parent_href = pair.find('a', href=True)['href'] 
+                                try: 
+                                    int(parent_href)
+                                    parent_href = f'/horse/{parent_href}'
+                                except: parent_href = f'/{parent_href}'
+                            except: 
+                                parent_href = None  
                             self.get_horse_data(value, parent_href)
                             session = Session()
-                            try: horse_mother_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
-                            except: horse_mother_ID = None
+                            while not horse_mother_ID:
+                                try: 
+                                    horse_mother_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(value)).first()[0]
+                                except: 
+                                    value = value[0:-1]
+                                    if len(value) == 1:
+                                        break
                             
                 db_insert.insert_horse(horse_name = horse_name, horse_gender = horse_gender, horse_brith_date = horse_brith_date
                                     , horse_coat = horse_coat, horse_breed = horse_breed, horse_origin = horse_origin
@@ -161,8 +205,8 @@ class data_acq_kw():
             os.remove(f"horse_page_{name}.txt")
  
  
-#checker = data_acq_kw()
-#checker.get_horse_data("Chibani")
+"""checker = data_acq_kw()
+checker.get_horse_data("Xaara")"""
 """session = Session()
 ask = session.query(db.Horses.ID).filter(db.Horses.name == "Hilal Muscat").first()[0]
 print(ask)

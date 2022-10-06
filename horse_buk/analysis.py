@@ -1,3 +1,0 @@
-"""" 
-    just methods for analysis
-"""

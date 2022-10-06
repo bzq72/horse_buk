@@ -1,0 +1,460 @@
+<html><head>
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://partner.googleadservices.com/gampad/cookie.js?domain=koniewyscigowe.pl&amp;callback=_gfp_s_&amp;client=ca-pub-2041209439036587"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-N43LJF7"></script><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202210030101/show_ads_impl_with_ama_fy2021.js?client=ca-pub-2041209439036587&amp;plah=koniewyscigowe.pl&amp;bust=31070102" id="google_shimpl"></script><script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2041209439036587" crossorigin="anonymous" data-checked-head="true"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Szukaj</title>
+<meta name="description" content="Baza Koni Wyścigowych - koniewyscigowe.pl">
+<meta property="og:url" content="/szukaj">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Szukaj">
+<meta property="og:description" content="koniewyscigowe.pl">
+<meta property="og:image" content="/assets/img/logo/logo_big.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="/assets/vendor/fonts.googleapis.css">
+
+<link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css">
+
+<link rel="stylesheet" href="/assets/vendor/icon-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/vendor/icon-line/css/simple-line-icons.css">
+<link rel="stylesheet" href="/assets/vendor/icon-etlinefont/style.css">
+<link rel="stylesheet" href="/assets/vendor/icon-line-pro/style.css">
+<link rel="stylesheet" href="/assets/vendor/icon-hs/style.css">
+<link rel="stylesheet" href="/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+<link rel="stylesheet" href="/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+<link rel="stylesheet" href="/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+<link rel="stylesheet" href="/assets/vendor/animate.css">
+<link rel="stylesheet" href="/assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="/assets/js/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="/assets/css/unify-components.css">
+<link rel="stylesheet" href="/assets/vendor/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="/assets/vendor/typedjs/typed.css">
+
+<link rel="stylesheet" href="/assets/css/unify-core.css">
+<link rel="stylesheet" href="/assets/css/unify-globals.css">
+
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-N43LJF7');</script><meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+
+<link rel="canonical" href="/szukaj">
+<link rel="preload" href="https://adservice.google.pl/adsid/integrator.js?domain=koniewyscigowe.pl" as="script"><script type="text/javascript" src="https://adservice.google.pl/adsid/integrator.js?domain=koniewyscigowe.pl"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=koniewyscigowe.pl" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=koniewyscigowe.pl"></script><meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="https://adservice.google.pl/adsid/integrator.js?domain=koniewyscigowe.pl" as="script"><script type="text/javascript" src="https://adservice.google.pl/adsid/integrator.js?domain=koniewyscigowe.pl"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=koniewyscigowe.pl" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=koniewyscigowe.pl"></script></head><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20221003/r20190131/zrt_lookup.html" style="display: none;"></iframe>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N43LJF7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<main style="height: auto !important;">
+
+<header id="js-header" class="u-header u-header--static">
+<div class="u-header__section u-header__section--hidden u-header__section--dark g-bg-black g-py-13">
+<div class="container">
+<div class="row flex-column flex-md-row align-items-center justify-content-between text-uppercase g-color-white g-font-size-11 g-mx-minus-15">
+<div class="col-auto g-px-15 w-100 g-width-auto--md">
+<ul id="dropdown-megamenu" class="d-md-block collapse list-inline g-line-height-1 g-mx-minus-4 mb-0 hs-menu-initialized hs-menu-horizontal">
+<li class="list-inline-item">
+<a href="https://www.facebook.com/koniewyscigowepl/" class="g-color-white g-color-primary--hover g-pa-3">
+<i class="fa fa-facebook"></i>
+</a>
+</li>
+<li class="list-inline-item">
+<a href="https://twitter.com/koniewyscigowe" class="g-color-white g-color-primary--hover g-pa-3">
+<i class="fa fa-twitter"></i>
+</a>
+</li>
+
+<li class="d-block d-md-inline-block g-mx-4">
+<i class="fa fa-envelope-o"></i> <a href="/support" class="g-color-white g-color-primary--hover g-text-underline--none--hover">kontakt</a>
+</li>
+<li class="d-block g-hidden-md-down d-md-inline-block g-mx-4">|</li>
+<li class="hs-has-sub-menu d-block d-md-inline-block g-pos-rel g-mx-4">
+<i class="fa fa-globe g-font-size-14 g-mr-3"></i>
+<a href="javascript:void(0);" id="dropdown-invoker-3" class="g-color-white g-color-primary--hover g-text-underline--none--hover" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-3"></a>
+<ul id="dropdown-3" onchange="javascript:window.location.href='/LanguageSwitcher/switchLang/'+this.value;" class="hs-sub-menu list-unstyled g-bg-gray-dark-v1 g-py-10 g-px-20 g-mt-13" aria-labelledby="dropdown-invoker-3" style="display: none;">
+<li class="g-py-10">
+
+<a href="/" class="d-block g-text-underline--none--hover g-color-white g-color-primary--hover">Polski</a>
+</li>
+<li class="g-py-10">
+<a href="/en/" class="d-block g-text-underline--none--hover g-color-white g-color-primary--hover">English</a>
+</li>
+</ul>
+<input id="global_site_lang" type="hidden" value=" ">
+</li>
+</ul>
+</div>
+<div class="col-auto g-px-15">
+<ul class="list-inline g-line-height-1 g-mt-minus-10 g-mx-minus-4 mb-0">
+<li class="list-inline-item g-mx-4 g-mt-10">
+<a href="/login" class="g-color-white g-color-primary--hover g-text-underline--none--hover">logowanie</a>
+</li>
+<li class="list-inline-item g-mx-4 g-mt-10">|</li>
+<li class="list-inline-item g-mx-4 g-mt-10">
+<a href="/signup" class="g-color-white g-color-primary--hover g-text-underline--none--hover">rejestracja</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-0">
+<nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+<div class="container">
+
+<button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+<span class="hamburger hamburger--slider">
+<span class="hamburger-box">
+<span class="hamburger-inner"></span>
+</span>
+</span>
+</button>
+
+
+<a href="/" class="navbar-brand">
+<img src="/assets/img/logo/logo_big_8.png" alt="" style="height: 65px">
+</a>
+
+
+<div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+
+<form id="target" class="g-width-50x--md mx-auto g-mb-33" type="get" name="searchForm" action="szukaj">
+<div class="input-group">
+<input class="form-control g-font-size-15 border-1" value="Herbat" placeholder="Szukaj..." aria-label="Szukaj..." name="search" id="search" type="text">
+<span class="input-group-btn">
+<button class="btn btn-primary g-font-size-15 g-py-10 g-px-20" type="submit">
+<i class="fa fa-search"></i>
+</button>
+</span>
+</div>
+</form>
+
+<ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+
+<li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+<a id="nav-link--features" class="nav-link g-py-7 g-px-0" href="#!" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features">konie</a>
+<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu--features" aria-labelledby="nav-link--features" style="display: none;">
+<li class="dropdown-item ">
+<a class="nav-link" href="/statystyki_koni">statystyki</a>
+</li>
+
+<li class="dropdown-item ">
+<a class="nav-link" href="/spis_koni_wyscigowych">lista alfabetyczna</a>
+</li>
+</ul>
+</li>
+
+
+<li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+<a id="nav-link--features" class="nav-link g-py-7 g-px-0" href="#!" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features">wyścigi</a>
+<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu--features" aria-labelledby="nav-link--features" style="display: none;">
+<li class="dropdown-item ">
+<a class="nav-link" href="/wyniki_gonitw">wyniki gonitw</a>
+</li>
+
+</ul>
+</li>
+
+
+<li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+<a id="nav-link--features" class="nav-link g-py-7 g-px-0" href="#!" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features">statystyki</a>
+<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling hs-reversed" id="nav-submenu--features" aria-labelledby="nav-link--features" style="display: none;">
+<li class="dropdown-item ">
+<a class="nav-link" href="/ranking?kategoria=T">trenerzy</a>
+</li>
+<li class="dropdown-item ">
+<a class="nav-link" href="/ranking?kategoria=J">jeźdźcy</a>
+</li>
+<li class="dropdown-item ">
+<a class="nav-link" href="/ranking?kategoria=W">właściciele</a>
+</li>
+<li class="dropdown-item ">
+<a class="nav-link" href="/ranking?kategoria=H">hodowcy</a>
+</li>
+<li class="dropdown-item ">
+<a class="nav-link" href="/trenerzy_koni_wyscigowych">lista trenerów</a>
+</li>
+<li class="dropdown-item ">
+<a class="nav-link" href="/jezdzcy_koni_wyscigowych">lista jeźdźców</a>
+</li>
+<li class="dropdown-item ">
+<a class="nav-link" href="/wlasciciele_koni_wyscigowych">lista właścicieli</a>
+</li>
+<li class="dropdown-item ">
+<a class="nav-link" href="/hodowcy_koni_wyscigowych">lista hodowców</a>
+</li>
+</ul>
+</li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+</div>
+</header>
+<hr class="g-brd-gray-light-v4 my-0">
+
+<section class="container g-pt-50">
+<div class=" u-heading-v2-3--bottom g-brd-primary g-mb-20 text-center g-mb-20">
+<h3 class="g-color-black g-font-weight-600 mb-3">Wyniki wyszukiwania dla frazy " Herbat " </h3>
+</div>
+<div class="row g-mb-20">
+<div class="table-responsive">
+<table class="table table-striped" id="wykaz">
+<thead>
+<tr>
+<th style="text-align:center">KOŃ</th>
+<th style="text-align:center">plec</th>
+<th style="text-align:center">data</th>
+<th style="text-align:center">ojciec</th>
+<th style="text-align:center">matka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="/horse/444-herbata"> <b>Herbat</b>a (xx)</a></td>
+<td style="text-align:center"> klacz</td>
+<td style="text-align:center">09.02.2012</td>
+<td style="text-align:center">Don Corleone (xx)</td>
+<td style="text-align:center">Holandia (xx) / Belenus (xx)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/horse/30003-herbatka"> <b>Herbat</b>ka (xx)</a></td>
+<td style="text-align:center"> klacz</td>
+<td style="text-align:center">12.02.2017</td>
+<td style="text-align:center">Archipenko (xx)</td>
+<td style="text-align:center">Plus Ca Change (xx) / Invincible Spirit (xx)</td>
+</tr>
+ <tr>
+<td style="text-align:center"><a href="/horse/1235-herbatka-we-dwoje"> <b>Herbat</b>ka We Dwoje (xx)</a></td>
+<td style="text-align:center"> klacz</td>
+<td style="text-align:center">18.03.2012</td>
+<td style="text-align:center">Observatory (xx)</td>
+<td style="text-align:center">Coming Back (xx) / Fantastic Light (xx)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/horse/21424-herbatnik"> <b>Herbat</b>nik (xx)</a></td>
+<td style="text-align:center"> ogier</td>
+<td style="text-align:center">04.04.2014</td>
+<td style="text-align:center">Bushranger (xx)</td>
+<td style="text-align:center">Vanilla Loan (xx) / Invincible Spirit (xx)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="/horse/1224-zielona-herbatka"> Zielona <b>Herbat</b>ka (xx)</a></td>
+<td style="text-align:center"> klacz</td>
+<td style="text-align:center">2011</td>
+<td style="text-align:center">Azamour (xx)</td>
+<td style="text-align:center">Silk Road (xx) / Dansili (xx)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section class="container g-pt-15" style="height: auto !important;">
+
+<div class="row g-mb-20" style="height: auto !important;">
+<div class="table-responsive">
+<table class="table table-striped" id="wykaz">
+<thead>
+<tr>
+<th style="text-align:center">HODOWCY KONI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5" style="text-align: center"><b>brak wynikow</b></td>
+</tr>
+</tbody>
+</table><div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-2041209439036587" data-adsbygoogle-status="done" style="display: block; margin: 10px auto 14px; background-color: transparent; height: 0px;" data-ad-status="unfilled"><div id="aswift_1_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 960px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"><iframe id="aswift_1" name="aswift_1" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 960px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="960" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2041209439036587&amp;output=html&amp;h=280&amp;adk=3335573267&amp;adf=2377678507&amp;pi=t.aa~a.2047548820~rp.4&amp;w=960&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1665063293&amp;rafmt=1&amp;to=qs&amp;pwprc=4056437737&amp;format=960x280&amp;url=https%3A%2F%2Fkoniewyscigowe.pl%2Fszukaj%3Fsearch%3DHerbat&amp;fwr=0&amp;pra=3&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=40&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTA1LjAuNTE5NS4xMjciLFtdLGZhbHNlLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTA1LjAuNTE5NS4xMjciXSxbIk5vdClBO0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDUuMC41MTk1LjEyNyJdXSxmYWxzZV0.&amp;dt=1665063293425&amp;bpp=4&amp;bdt=870&amp;idt=-M&amp;shv=r20221003&amp;mjsv=m202210030101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0&amp;nras=2&amp;correlator=3539031456476&amp;frm=20&amp;pv=1&amp;ga_vid=813672267.1665063293&amp;ga_sid=1665063293&amp;ga_hid=412854326&amp;ga_fc=1&amp;u_tz=120&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=30&amp;ady=690&amp;biw=1019&amp;bih=657&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C31070179%2C42531706%2C44773614%2C31070102&amp;oid=2&amp;pvsid=3378960059752592&amp;tmod=429762264&amp;uas=0&amp;nvt=1&amp;eae=0&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C674&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=1152&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;btvi=1&amp;fsb=1&amp;xpc=QQEORK6jth&amp;p=https%3A//koniewyscigowe.pl&amp;dtd=15" data-google-container-id="a!2" data-google-query-id="CJyrmpDcy_oCFdaimgodwasPsw" data-load-complete="true"></iframe></div></ins></div>
+</div>
+</div>
+</section>
+
+<section class="container g-pt-15" style="height: auto !important;">
+
+<div class="row g-mb-20" style="height: auto !important;">
+<div class="table-responsive">
+<table class="table table-striped" id="wykaz">
+<thead>
+<tr>
+<th style="text-align:center">TRENERZY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5" style="text-align: center"><b>brak wynikow</b></td>
+</tr>
+</tbody>
+</table><div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-2041209439036587" data-adsbygoogle-status="done" style="display: block; margin: 10px auto 14px; background-color: transparent; height: 0px;" data-ad-status="unfilled"><div id="aswift_2_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 960px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"><iframe id="aswift_2" name="aswift_2" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 960px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="960" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2041209439036587&amp;output=html&amp;h=280&amp;adk=3335573267&amp;adf=2294518306&amp;pi=t.aa~a.2047551933~rp.4&amp;w=960&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1665063293&amp;rafmt=1&amp;to=qs&amp;pwprc=4056437737&amp;format=960x280&amp;url=https%3A%2F%2Fkoniewyscigowe.pl%2Fszukaj%3Fsearch%3DHerbat&amp;fwr=0&amp;pra=3&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=40&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTA1LjAuNTE5NS4xMjciLFtdLGZhbHNlLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTA1LjAuNTE5NS4xMjciXSxbIk5vdClBO0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDUuMC41MTk1LjEyNyJdXSxmYWxzZV0.&amp;dt=1665063293425&amp;bpp=1&amp;bdt=871&amp;idt=-M&amp;shv=r20221003&amp;mjsv=m202210030101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0%2C960x280&amp;nras=3&amp;correlator=3539031456476&amp;frm=20&amp;pv=1&amp;ga_vid=813672267.1665063293&amp;ga_sid=1665063293&amp;ga_hid=412854326&amp;ga_fc=1&amp;u_tz=120&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=30&amp;ady=1124&amp;biw=1019&amp;bih=657&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C31070179%2C42531706%2C44773614%2C31070102&amp;oid=2&amp;pvsid=3378960059752592&amp;tmod=429762264&amp;uas=0&amp;nvt=1&amp;eae=0&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C674&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=1152&amp;bc=31&amp;ifi=3&amp;uci=a!3&amp;btvi=2&amp;fsb=1&amp;xpc=LFLaP14tDo&amp;p=https%3A//koniewyscigowe.pl&amp;dtd=24" data-google-container-id="a!3" data-google-query-id="CIO7mpDcy_oCFZjomgodeJsHsw" data-load-complete="true"></iframe></div></ins></div>
+</div>
+</div>
+</section>
+
+<section class="container g-pt-15" style="height: auto !important;">
+
+<div class="row g-mb-20" style="height: auto !important;">
+<div class="table-responsive">
+<table class="table table-striped" id="wykaz">
+<thead>
+<tr>
+<th style="text-align:center">JEŹDŹCY / POWOŻĄCY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5" style="text-align: center"><b>brak wynikow</b></td>
+</tr>
+</tbody>
+</table><div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-2041209439036587" data-adsbygoogle-status="done" style="display: block; margin: 10px auto 14px; background-color: transparent; height: 0px;" data-ad-status="unfilled"><div id="aswift_3_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 960px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"><iframe id="aswift_3" name="aswift_3" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 960px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="960" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2041209439036587&amp;output=html&amp;h=90&amp;adk=3486977976&amp;adf=1533868154&amp;pi=t.aa~a.2047475906~rp.4&amp;w=960&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1665063293&amp;rafmt=1&amp;to=qs&amp;pwprc=4056437737&amp;format=960x90&amp;url=https%3A%2F%2Fkoniewyscigowe.pl%2Fszukaj%3Fsearch%3DHerbat&amp;fwr=0&amp;pra=3&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=40&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTA1LjAuNTE5NS4xMjciLFtdLGZhbHNlLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTA1LjAuNTE5NS4xMjciXSxbIk5vdClBO0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDUuMC41MTk1LjEyNyJdXSxmYWxzZV0.&amp;dt=1665063293425&amp;bpp=1&amp;bdt=871&amp;idt=-M&amp;shv=r20221003&amp;mjsv=m202210030101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0%2C960x280%2C960x280&amp;nras=4&amp;correlator=3539031456476&amp;frm=20&amp;pv=1&amp;ga_vid=813672267.1665063293&amp;ga_sid=1665063293&amp;ga_hid=412854326&amp;ga_fc=1&amp;u_tz=120&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=30&amp;ady=1559&amp;biw=1019&amp;bih=657&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C31070179%2C42531706%2C44773614%2C31070102&amp;oid=2&amp;pvsid=3378960059752592&amp;tmod=429762264&amp;uas=0&amp;nvt=1&amp;eae=0&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C674&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=1152&amp;bc=31&amp;ifi=4&amp;uci=a!4&amp;btvi=3&amp;fsb=1&amp;xpc=uoTd7nkTxD&amp;p=https%3A//koniewyscigowe.pl&amp;dtd=31" data-google-container-id="a!4" data-google-query-id="CKWFm5Dcy_oCFYyOmgodUHMPfg" data-load-complete="true"></iframe></div></ins></div>
+</div>
+</div>
+</section>
+
+<section class="container g-pt-15" style="height: auto !important;">
+
+<div class="row g-mb-20" style="height: auto !important;">
+<div class="table-responsive">
+<table class="table table-striped" id="wykaz">
+<thead>
+<tr>
+<th style="text-align:center">WŁAŚCICIELE KONI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5" style="text-align: center"><b>brak wynikow</b></td>
+</tr>
+</tbody>
+</table><div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-2041209439036587" data-adsbygoogle-status="done" style="display: block; margin: 10px auto 14px; background-color: transparent; height: 0px;" data-ad-status="unfilled"><div id="aswift_4_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 960px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"><iframe id="aswift_4" name="aswift_4" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 960px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="960" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2041209439036587&amp;output=html&amp;h=60&amp;adk=3987099576&amp;adf=4225869992&amp;pi=t.aa~a.2047505899~rp.4&amp;w=960&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1665063293&amp;rafmt=1&amp;to=qs&amp;pwprc=4056437737&amp;format=960x60&amp;url=https%3A%2F%2Fkoniewyscigowe.pl%2Fszukaj%3Fsearch%3DHerbat&amp;fwr=0&amp;pra=3&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=40&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTA1LjAuNTE5NS4xMjciLFtdLGZhbHNlLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTA1LjAuNTE5NS4xMjciXSxbIk5vdClBO0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDUuMC41MTk1LjEyNyJdXSxmYWxzZV0.&amp;dt=1665063293425&amp;bpp=1&amp;bdt=871&amp;idt=1&amp;shv=r20221003&amp;mjsv=m202210030101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;prev_fmts=0x0%2C960x280%2C960x280%2C960x90&amp;nras=5&amp;correlator=3539031456476&amp;frm=20&amp;pv=1&amp;ga_vid=813672267.1665063293&amp;ga_sid=1665063293&amp;ga_hid=412854326&amp;ga_fc=1&amp;u_tz=120&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=30&amp;ady=1804&amp;biw=1019&amp;bih=657&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C31070179%2C42531706%2C44773614%2C31070102&amp;oid=2&amp;pvsid=3378960059752592&amp;tmod=429762264&amp;uas=0&amp;nvt=1&amp;eae=0&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C674&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=1152&amp;bc=31&amp;ifi=5&amp;uci=a!5&amp;btvi=4&amp;fsb=1&amp;xpc=G7HL0ERLPW&amp;p=https%3A//koniewyscigowe.pl&amp;dtd=36" data-google-container-id="a!5" data-google-query-id="CNCcm5Dcy_oCFRWLmwoditgGow" data-load-complete="true"></iframe></div></ins></div>
+</div>
+</div>
+</section>
+
+<section class="container g-pt-15">
+
+<div class="row g-mb-20">
+<div class="table-responsive">
+<table class="table table-striped" id="wykaz">
+
+<thead>
+<tr>
+<th style="text-align:center">GONITWY NAGRODOWE</th>
+<th style="text-align:center">data</th>
+<th style="text-align:center">miasto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5" style="text-align: center"><b>brak wynikow</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<footer>
+<div class="g-bg-black">
+<div class="container g-pt-70 g-pb-40">
+<div class="row">
+<div class="col-6 col-md-3 g-mb-30">
+<h3 class="h6 g-color-white text-uppercase">kontakt</h3>
+<ul class="list-unstyled mb-0">
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/statystyki_koni">statystyki</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/starty_zagraniczne">starty zagraniczne</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/handicap">handikapy</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/horses_for_sale">konie na sprzedaż</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/stallions_for_breeding">stanówki</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/spis_koni_wyscigowych">lista alfabetyczna</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3 g-mb-30">
+<h3 class="h6 g-color-white text-uppercase">wyścigi</h3>
+<ul class="list-unstyled mb-0" id="nav-submenu--features" aria-labelledby="nav-link--features">
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/wyniki_gonitw">wyniki gonitw</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/lista_startowa">listy startowe</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/program_gonitw">program wyścigowy</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/plan_gonitw">plan gonitw</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3 g-mb-30">
+<h3 class="h6 g-color-white text-uppercase">statystyki</h3>
+<ul class="list-unstyled mb-0">
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/ranking?kategoria=T">trenerzy</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/ranking?kategoria=J">jeźdźcy</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/ranking?kategoria=W">właściciele</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/ranking?kategoria=H">hodowcy</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/trenerzy_koni_wyscigowych">lista trenerów</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/jezdzcy_koni_wyscigowych">lista jeźdźców</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/wlasciciele_koni_wyscigowych">lista właścicieli</a></li>
+<li><a class="u-link-v6 g-color-gray-dark-v5 g-color-primary--hover g-font-weight-500 g-text-underline--none--hover g-py-3" href="/hodowcy_koni_wyscigowych">lista hodowców</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3 g-mb-30">
+<h3 class="h6 g-color-white ">Wszystkie zgormadzone w serwisie dane mają charakter nieoficjalny. Prosimy o zgłasznie wszelkich napotkanych błędów.</h3> 
+</div>
+</div>
+</div>
+</div>
+<div class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 text-center g-py-20">
+<div class="container">
+<small class="g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2022 © <a href="https://koniewyscigowe.pl">Baza Koni Wyścigowych</a></small>
+</div>
+</div>
+</footer>
+
+<a class="js-go-to u-go-to-v1 animated" href="#!" data-type="fixed" data-position="{&quot;bottom&quot;: 15, &quot;right&quot;: 15}" data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn" style="display: inline-block; position: fixed; opacity: 0; bottom: 15px; right: 15px;">
+<i class="hs-icon hs-icon-arrow-top"></i>
+</a>
+</main><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2041209439036587&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1665063293&amp;plat=9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1048576%2C32%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fkoniewyscigowe.pl%2Fszukaj%3Fsearch%3DHerbat&amp;ea=0&amp;pra=5&amp;wgl=1&amp;easpi=0&amp;asntp=0&amp;asntpv=0&amp;asntpl=0&amp;asntpm=0&amp;asntpc=0&amp;asna=5&amp;asnd=5&amp;asnp=5&amp;asns=5&amp;asmat=1&amp;asptt=-1&amp;uach=WyJXaW5kb3dzIiwiMTAuMC4wIiwieDg2IiwiIiwiMTA1LjAuNTE5NS4xMjciLFtdLGZhbHNlLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTA1LjAuNTE5NS4xMjciXSxbIk5vdClBO0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMDUuMC41MTk1LjEyNyJdXSxmYWxzZV0.&amp;dt=1665063292741&amp;bpp=61&amp;bdt=186&amp;idt=372&amp;shv=r20221003&amp;mjsv=m202210030101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=3539031456476&amp;frm=20&amp;pv=2&amp;ga_vid=813672267.1665063293&amp;ga_sid=1665063293&amp;ga_hid=412854326&amp;ga_fc=0&amp;u_tz=120&amp;u_his=2&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1019&amp;bih=657&amp;scr_x=0&amp;scr_y=0&amp;eid=44759876%2C44759927%2C44759837%2C31070179%2C42531706%2C44773614%2C31070102&amp;oid=2&amp;pvsid=3378960059752592&amp;tmod=252871688&amp;uas=0&amp;nvt=1&amp;eae=2&amp;fc=1920&amp;brdim=9%2C9%2C9%2C9%2C1536%2C0%2C1051%2C806%2C1036%2C674&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=33792&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=400" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins>
+<div class="u-outer-spaces-helper"></div>
+
+<script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+<script src="/assets/vendor/jquery.easing/js/jquery.easing.js"></script>
+<script src="/assets/vendor/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="/assets/vendor/bootstrap/offcanvas.js"></script>
+<script src="/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+<script src="/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+<script src="/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+<script src="/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+<script src="/assets/vendor/slick-carousel/slick/slick.js"></script>
+<script src="/assets/vendor/typedjs/typed.min.js"></script>
+<script src="/assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+<script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/js/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+
+<script src="/assets/js/jquery.validate.min.js"></script>
+<script src="/assets/js/hs.core.js"></script>
+<script src="/assets/js/components/hs.header.js"></script>
+<script src="/assets/js/helpers/hs.hamburgers.js"></script>
+<script src="/assets/js/components/hs.tabs.js"></script>
+<script src="/assets/js/components/hs.popup.js"></script>
+<script src="/assets/js/components/hs.carousel.js"></script>
+<script src="/assets/js/components/text-animation/hs.text-slideshow.js"></script>
+<script src="/assets/js/components/hs.go-to.js"></script>
+
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/my-custom.js"></script>
+<script src="/assets/vendor/jquery.filer/js/jquery.filer.min.js"></script>
+<script src="/assets/js/table_sorting.js"></script>
+<script src="/assets/js/theme.js"></script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'755ec6dd9862ca43',m:'TELVeNBwvdDRtHCGEiCQchowepbbzReZ9H3B4Pgl1sI-1665063290-0-AbvDVwz5SrM5UlH4F0ZWqZsxgoXx24pbyvrynlxcMJTHRLh/Ad0YFsyl6U907hOslZi4TqUz/25Ruk+Mu3EP3jp8xkgcVcRVS0ddUugXScPHn6oQe9vxTyOgd1xPNG1pQeUNRUKQL9PHr9kIxIGro/w=',s:[0x370c32d517,0xa8cd210530],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+<div style="display: none; visibility: hidden;"><script async="null" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client:"ca-pub-7937183490530796",enable_page_level_ads:!0});</script></div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"></ins><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body></html>
