@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--[if lt IE 9]>
+<script language="javascript" type="text/javascript" src="https://www.pkwk.pl/wp-content/themes/pkwk/js/html5.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://www.pkwk.pl/wp-content/themes/pkwk/style.css" type="text/css" />
+<!-- STYL ŁADUJEMY KIEDY JEST WIDOCZNA LEWA KOLUMNA-->
+<link rel="stylesheet" href="https://www.pkwk.pl/wp-content/themes/pkwk/css/box_left.css" type="text/css" />
+<link rel="stylesheet" href="https://www.pkwk.pl/wp-content/themes/pkwk/css/custom-error-notification.css" type="text/css" />
+<link rel="stylesheet" href="https://www.pkwk.pl/wp-content/themes/pkwk/css/jquery-ui.css" type="text/css" />
+<script src='//www.pkwk.pl/wp-content/cache/www.pkwk.pl/wpfc-minified/l27e8oni/i7ar.js' type="text/javascript"></script>
+<!-- <script type="text/javascript" src="https://www.pkwk.pl/wp-content/themes/pkwk/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="https://www.pkwk.pl/wp-content/themes/pkwk/js/jquery.validate.js"></script> -->
+<!-- <script type="text/javascript" src="https://www.pkwk.pl/wp-content/themes/pkwk/js/bxslider/jquery.bxslider.min.js"></script> -->
+<!-- <script type="text/javascript" src="https://www.pkwk.pl/wp-content/themes/pkwk/js/init.js"></script> -->
+<!-- SKRYPT ŁADUJEMY DLA POLSKIE WERSJI-->
+<!-- <script type="text/javascript" src="https://www.pkwk.pl/wp-content/themes/pkwk/js/validate_pl.js"></script> -->
+<title>Sprawozdania 2022 &#8211; PKWK</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="PKWK &raquo; Sprawozdania 2022 Kanał z komentarzami" href="https://www.pkwk.pl/language/pl/sprawozdania-2022/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.pkwk.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.4"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 0.07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='bamboo-columns-css'  href='https://www.pkwk.pl/wp-content/plugins/bamboo-columns/bamboo-columns.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.pkwk.pl/wp-includes/css/dist/block-library/style.min.css?ver=5.9.4' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='wen-responsive-columns-css'  href='https://www.pkwk.pl/wp-content/plugins/wen-responsive-columns/public/css/wen-responsive-columns-public.css?ver=1.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='newsletter-css'  href='https://www.pkwk.pl/wp-content/plugins/newsletter/style.css?ver=7.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='slb_core-css'  href='https://www.pkwk.pl/wp-content/plugins/simple-lightbox/client/css/app.css?ver=2.9.2' type='text/css' media='all' />
+<script type='text/javascript' id='jquery-core-js-extra'>
+/* <![CDATA[ */
+var SDT_DATA = {"ajaxurl":"https:\/\/www.pkwk.pl\/wp-admin\/admin-ajax.php","siteUrl":"https:\/\/www.pkwk.pl\/","pluginsUrl":"https:\/\/www.pkwk.pl\/wp-content\/plugins","isAdmin":""};
+/* ]]> */
+</script>
+<script src='//www.pkwk.pl/wp-content/cache/www.pkwk.pl/wpfc-minified/7nzvld0t/i7ar.js' type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://www.pkwk.pl/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script> -->
+<!-- <script type='text/javascript' src='https://www.pkwk.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script> -->
+<!-- <script type='text/javascript' src='https://www.pkwk.pl/wp-content/plugins/wen-responsive-columns/public/js/wen-responsive-columns-public.js?ver=1.3.2' id='wen-responsive-columns-js'></script> -->
+<link rel="https://api.w.org/" href="https://www.pkwk.pl/wp-json/" /><link rel="alternate" type="application/json" href="https://www.pkwk.pl/wp-json/wp/v2/posts/30326" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.pkwk.pl/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.pkwk.pl/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.9.4" />
+<link rel="canonical" href="https://www.pkwk.pl/language/pl/sprawozdania-2022/" />
+<link rel='shortlink' href='https://www.pkwk.pl/?p=30326' />
+<link rel="alternate" type="application/json+oembed" href="https://www.pkwk.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.pkwk.pl%2Flanguage%2Fpl%2Fsprawozdania-2022%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.pkwk.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.pkwk.pl%2Flanguage%2Fpl%2Fsprawozdania-2022%2F&#038;format=xml" />
+<link type="text/css" rel="stylesheet" href="https://www.pkwk.pl/wp-content/plugins/custom_post_list/pl.css" />
+<link rel="icon" href="https://www.pkwk.pl/wp-content/uploads/2016/02/P-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.pkwk.pl/wp-content/uploads/2016/02/P-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.pkwk.pl/wp-content/uploads/2016/02/P-300x300.png" />
+<meta name="msapplication-TileImage" content="https://www.pkwk.pl/wp-content/uploads/2016/02/P-300x300.png" />
+</head>
+<body>
+<div id="page">
+<header id="header" class="row_long">
+<div class="row_medium">
+<div id="logo">
+<a href="https://www.pkwk.pl/language/pl/main/"><img src="https://www.pkwk.pl/wp-content/themes/pkwk/images/logo.png" alt="logo" /></a>
+</div>
+<div id="languages"><ul>
+<li class="lang-item lang-item-69 lang-item-pl current-lang lang-item-first"><a  lang="pl-PL" hreflang="pl-PL" href="https://www.pkwk.pl/language/pl/sprawozdania-2022/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAPFBMVEX/8fH67Ozz5ubt4OD+/v77+/v39/fo2Nj5AAD+jo79bW36X1/4T0/5QUHhAAD3MzP0Kir2ICDzERHtAACO5h0ZAAAAQUlEQVR4AQXBsRHDMAwAMTzNwvuvm5MVIECIZIEQZ4EQ7AAIGBABegsR+Z7VxChx7hCjhIwYJcTydcgQ1gv8Lhd/58kJTU6WtnIAAAAASUVORK5CYII=" alt="Polski" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">Polski</span></a></li>
+<li class="lang-item lang-item-72 lang-item-en no-translation"><a  lang="en-GB" hreflang="en-GB" href="https://www.pkwk.pl/language/en/main-page1/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg==" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">English</span></a></li>
+</ul>
+</div>			 				
+<input type="hidden" id="custom-error-form-close-btn" value="Zamknij" />
+<div class="textwidget" id="custom-error-form" title="Formularz zgłaszania błędów"></div>
+<a id="menu_btn" href="#page"></a>
+</div>
+<nav id="menu_top">
+<ul id="menu-naglowek-menu" class="menu_top"><li id="menu-item-2064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2064"><a href="https://www.pkwk.pl/language/pl/main/"> </a></li>
+<li id="menu-item-9062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9062"><a href="https://www.pkwk.pl/language/pl/o-nas/">O nas</a>
+<ul class="sub-menu">
+<li id="menu-item-2094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2094"><a title="Klub" href="https://www.pkwk.pl/language/pl/o-nas/">Klub</a></li>
+<li id="menu-item-855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-855"><a href="https://www.pkwk.pl/language/pl/prezes/">Prezes</a></li>
+</ul>
+</li>
+<li id="menu-item-9050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9050"><a href="https://www.pkwk.pl/language/pl/rada-vi-kadencji/">Rada PKWK</a>
+<ul class="sub-menu">
+<li id="menu-item-26187" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-26187"><a href="https://www.pkwk.pl/language/pl/rada-vi-kadencji/">Rada VI Kadencji</a></li>
+<li id="menu-item-11963" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11963"><a href="https://www.pkwk.pl/language/pl/porzadki-obrad/">Porządki obrad</a></li>
+<li id="menu-item-11964" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11964"><a href="https://www.pkwk.pl/language/pl/protokoly-z-posiedzen/">Protokoły z posiedzeń</a></li>
+<li id="menu-item-9051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9051"><a href="https://www.pkwk.pl/language/pl/regulamin-pracy-rady-pkwk-2/">Regulamin pracy Rady</a></li>
+<li id="menu-item-11957" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11957"><a href="https://www.pkwk.pl/language/pl/rada-nowej-kadencji-2016/">Rada V kadencji</a></li>
+<li id="menu-item-11955" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11955"><a href="https://www.pkwk.pl/language/pl/rada-iv-kadencji/">Rada IV kadencji</a></li>
+<li id="menu-item-11956" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-11956"><a href="https://www.pkwk.pl/language/pl/porzadki-obrad-rady/">Rada III kadencji</a></li>
+</ul>
+</li>
+<li id="menu-item-792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-792"><a href="#">Przepisy</a>
+<ul class="sub-menu">
+<li id="menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790"><a href="https://www.pkwk.pl/language/pl/ustawa/">Ustawa o wyścigach konnych</a></li>
+<li id="menu-item-9448" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9448"><a href="https://www.pkwk.pl/language/pl/regulamin-wyscigow-konnych-2016/">Regulamin wyścigów konnych</a></li>
+<li id="menu-item-809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-809"><a href="https://www.pkwk.pl/language/pl/inne-rozporzadzenia-i-regulaminy/">Inne rozporządzenia i regulaminy</a></li>
+</ul>
+</li>
+<li id="menu-item-844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-844"><a href="#">Tory w Polsce</a>
+<ul class="sub-menu">
+<li id="menu-item-870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-870"><a target="_blank" rel="noopener" href="http://www.torsluzewiec.pl/">Służewiec &#8211; Warszawa</a></li>
+<li id="menu-item-871" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-871"><a target="_blank" rel="noopener" href="http://www.wtwk-partynice.pl/">Partynice &#8211; Wrocław</a></li>
+<li id="menu-item-872" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-872"><a target="_blank" rel="noopener" href="http://www.hipodrom.sopot.pl/">Hipodrom &#8211; Sopot</a></li>
+</ul>
+</li>
+<li id="menu-item-914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-914"><a href="https://www.pkwk.pl/language/pl/ksiegi-stadne/">Księgi Stadne</a></li>
+<li id="menu-item-9063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9063"><a href="https://www.pkwk.pl/language/pl/biuletyn-pkwk/">Biuletyny</a></li>
+<li id="menu-item-26794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26794"><a href="https://www.pkwk.pl/language/pl/wyszukiwarka/">Baza koni wyścigowych</a></li>
+<li id="menu-item-856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-856"><a href="https://www.pkwk.pl/language/pl/wydzialy/">Co gdzie załatwić?</a></li>
+<li id="menu-item-30395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30395"><a href="https://wnioski.pkwk.pl/">WNIOSKI on-line</a></li>
+<li id="menu-item-9064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9064"><a href="https://www.pkwk.pl/language/pl/cennik/">Cennik</a></li>
+<li id="menu-item-891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-891"><a href="https://www.pkwk.pl/language/pl/contact/">Kontakt</a></li>
+</ul>		</nav>
+</header>
+<div id="center" class="row_long">
+<div id="box_base" class="row_medium">
+<div id="box_left">
+<h2 class="widget-title">Menu</h2><ul id="menu-boczne-menu" class="menu_left"><li id="menu-item-2256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2256"><a href="https://www.pkwk.pl/language/pl/aktualnosci/">Aktualności</a></li>
+<li id="menu-item-2041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2041"><a href="https://www.pkwk.pl/language/pl/informacje-wyscigowe/">Informacje wyścigowe</a></li>
+<li id="menu-item-2042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2042"><a href="https://www.pkwk.pl/language/pl/statystyki/">Statystyki</a></li>
+<li id="menu-item-6233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6233"><a href="https://www.pkwk.pl/language/pl/sprawozdania-wyscigowe/">Sprawozdania wyścigowe</a></li>
+<li id="menu-item-5516" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5516"><a href="https://www.pkwk.pl/language/pl/szkolenia-i-seminaria/">Szkolenia i seminaria</a></li>
+<li id="menu-item-2040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2040"><a href="https://www.pkwk.pl/language/pl/komunikaty/">Komunikaty</a></li>
+<li id="menu-item-4262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4262"><a href="https://www.pkwk.pl/language/pl/zarzadzenia/">Zarządzenia</a></li>
+<li id="menu-item-2038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2038"><a href="https://www.pkwk.pl/language/pl/biuletyn-pkwk/">Biuletyn</a></li>
+<li id="menu-item-27033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27033"><a href="https://www.pkwk.pl/language/pl/ksiegi-stadne/">FORMULARZE &#8211; Księgi Stadne</a></li>
+<li id="menu-item-2043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2043"><a href="https://www.pkwk.pl/language/pl/wzory/">FORMULARZE &#8211; Wyścigi</a></li>
+<li id="menu-item-30463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30463"><a href="https://wnioski.pkwk.pl/login?next=%2F">WNIOSKI on-line</a></li>
+<li id="menu-item-2039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2039"><a href="https://www.pkwk.pl/language/pl/cennik/">Cennik opłat urzędowych</a></li>
+<li id="menu-item-2115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2115"><a target="_blank" rel="noopener" href="https://www.pkwk.pl/language/pl/?page_id=2112">Galeria zdjęć</a></li>
+<li id="menu-item-9070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9070"><a href="https://www.pkwk.pl/language/pl/contact/">Kontakt</a></li>
+<li id="menu-item-27919" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27919"><a title="KOŃ POLSKI" target="_blank" rel="noopener" href="http://konpolski.pl/">Magazyn KOŃ POLSKI</a></li>
+<li id="menu-item-27920" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27920"><a title="Pride of Poland" target="_blank" rel="noopener" href="http://prideofpoland.com/">Pride of Poland</a></li>
+<li id="menu-item-17697" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-17697"><a href="https://www.pkwk.pl/language/pl/zamowienia-publiczne/">ZAMÓWIENIA PUBLICZNE</a></li>
+<li id="menu-item-18808" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-18808"><a title="POLITYKA PRYWATNOŚCI" target="_blank" rel="noopener" href="https://www.pkwk.pl/language/pl/polityka-prywatnosci/">POLITYKA PRYWATNOŚCI</a></li>
+<li id="menu-item-22438" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-22438"><a href="https://www.pkwk.pl/language/pl/polityka-antykorupcyjna/">POLITYKA ANTYKORUPCYJNA</a></li>
+<li id="menu-item-27305" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-27305"><a href="https://www.pkwk.pl/language/pl/deklaracja-dostepnosci-polskiego-klubu-wyscigow-konnych/">Deklaracja dostępności PKWK</a></li>
+<li id="menu-item-15225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15225"><a target="_blank" rel="noopener" href="https://www.pkwk.pl/language/pl/informacja-o-archiwach-ptwk-i-stwk/">Informacja dla byłych pracowników PTWK i STWK</a></li>
+<li id="menu-item-30076" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-30076"><a href="https://www.pkwk.pl/language/pl/oferty-pracy/">Oferty pracy</a></li>
+</ul><form role="search" method="get" id="searchform" class="searchform" action="https://www.pkwk.pl/language/pl/">
+<div>
+<label class="screen-reader-text" for="s">Szukaj:</label>
+<input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Szukaj" />
+</div>
+</form>	</div>
+<article id="post-30326" class="post-30326 post type-post status-publish format-standard hentry category-sprawozdania-wyscigowe category-sprawozdania-2022">
+<div id="contents">
+<h1 class="s2">Sprawozdania 2022</h1>
+<div class="return_path"><ul><li><a property="v:title" href="https://www.pkwk.pl/language/pl/main/">Home</a></li><li><a property="v:title" href="https://www.pkwk.pl/language/pl/category/sprawozdania-wyscigowe/">Sprawozdania wyścigowe</a></li><li>Sprawozdania 2022</li></ul></div>
+<div class="news_full">
+<div class="text">		
+<h1><span style="color: #800000; font-size: 14pt;"><strong></p>
+<div id='Lista_artykułów' class='widget_shortcode'>
+<div class="widget widget_post-list">
+<h2 class="widgettitle">ROK:</h2>
+<p><select name='cat_pl' id='cat_pl' class='postform' ><option value='-1'>Wybierz artykuł</option><option value='https://www.pkwk.pl/?p=30326'>Sprawozdania 2022</option><option value='https://www.pkwk.pl/?p=26922'>Sprawozdania 2021</option><option value='https://www.pkwk.pl/?p=24420'>Sprawozdania 2020</option><option value='https://www.pkwk.pl/?p=20881'>Sprawozdania 2019</option><option value='https://www.pkwk.pl/?p=18039'>Sprawozdania 2018</option><option value='https://www.pkwk.pl/?p=13794'>Sprawozdania 2017</option><option value='https://www.pkwk.pl/?p=9477'>Sprawozdania 2015</option><option value='https://www.pkwk.pl/?p=9346'>Sprawozdania 2016</option></select></p>
+<p>		<script type='text/javascript'>
+/* <![CDATA[ */
+document.getElementById('cat_pl').onchange = function(){
+if ( this.selectedIndex  > 0) {
+window.location = this.options[this.selectedIndex].value;
+}
+};
+/* ]]&gt; */
+</script></p></div>
+</div>
+<p></strong></span></h1>
+<p style="padding-left: 30px; text-align: center;"><span style="color: #800000; font-size: 18pt;"><strong><span style="font-family: Georgia,Palatino;">Sezon 2022</span></strong></span></p>
+<div class="column-half first">
+<p><span style="color: #008000; font-family: Georgia,Palatino; display: inline-block; padding: 0px 5px; margin: 0px 2px; font-size: 14pt;"><strong>Warszawa</strong></span></p>
+<ul class="list_s1 list_doc">
+<li>Warszawa &#8211; 24.04.2022 Dzień 1<strong><a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/04/Wyniki_WARSZAWA_24-04-2022_Dzien_001.pdf"> </a></strong></li>
+<li>Warszawa &#8211; 30.04.2022 Dzień 2<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_30-04-2022_Dzien_002.pdf"> </a></li>
+<li>Warszawa &#8211; 01.05.2022 Dzień 3<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_01-05-2022_Dzien_003.pdf"> </a></li>
+<li>Warszawa &#8211; 07.05.2022 Dzień 4<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_07-05-2022_Dzien_004.pdf"> </a></li>
+<li>Warszawa &#8211; 08.05.2022 Dzień 5<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_08-05-2022_Dzien_005.pdf"> </a></li>
+<li>Warszawa &#8211; 14.05.2022 Dzień 6<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_14-05-2022_Dzien_006.pdf"> </a></li>
+<li>Warszawa &#8211; 15.05.2022 Dzień 7<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_15-05-2022_Dzien_007.pdf"> </a></li>
+<li>Warszawa &#8211; 21.05.2022 Dzień 8<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_21-05-2022_Dzien_008.pdf"> </a></li>
+<li>Warszawa &#8211; 22.05.2022 Dzień 9<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/05/Wyniki_WARSZAWA_22-05-2022_Dzien_009.pdf"> </a></li>
+<li>Warszawa &#8211; 28.05.2022 Dzień 10<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_28-05-2022_Dzien_010.pdf"> </a></li>
+<li>Warszawa &#8211; 29.05.2022 Dzień 11<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/07/Wyniki_WARSZAWA_29-05-2022_Dzien_011.pdf"> </a></li>
+<li>Warszawa &#8211; 11.06.2022 Dzień 12<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_11-06-2022_Dzien_012.pdf"> </a></li>
+<li>Warszawa &#8211; 12.06.2022 Dzień 13<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_12-06-2022_Dzien_013.pdf"> </a></li>
+<li>Warszawa &#8211; 18.06.2022 Dzień 14<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_18-06-2022_Dzien_014.pdf"> </a></li>
+<li>Warszawa &#8211; 19.06.2022 Dzień 15<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_19-06-2022_Dzien_015.pdf"> </a></li>
+<li>Warszawa &#8211; 25.06.2022 Dzień 16<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_25-06-2022_Dzien_016.pdf"> </a></li>
+<li>Warszawa &#8211; 26.06.2022 Dzień 17<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/06/Wyniki_WARSZAWA_26-06-2022_Dzien_017.pdf"> </a></li>
+<li>Warszawa &#8211; 03.07.2022 Dzień 18<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/07/Wyniki_WARSZAWA_03-07-2022_Dzien_018.pdf"> </a></li>
+<li>Warszawa &#8211; 23.07.2022 Dzień 19<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/07/Wyniki_WARSZAWA_23-07-2022_Dzien_019.pdf"> </a></li>
+<li>Warszawa &#8211; 24.07.2022 Dzień 20<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/07/Wyniki_WARSZAWA_24-07-2022_Dzien_020.pdf"> </a></li>
+<li>Warszawa &#8211; 30.07.2022 Dzień 21<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/08/Wyniki_WARSZAWA_30-07-2022_Dzien_021.pdf"> </a></li>
+<li>Warszawa &#8211; 31.07.2022 Dzień 22<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/08/Wyniki_WARSZAWA_31-07-2022_Dzien_022.pdf"> </a></li>
+<li>Warszawa &#8211; 06.08.2022 Dzień 23<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/08/Wyniki_WARSZAWA_06-08-2022_Dzien_023.pdf"> </a></li>
+<li>Warszawa &#8211; 07.08.2022 Dzień 24<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/08/Wyniki_WARSZAWA_07-08-2022_Dzien_024.pdf"> </a></li>
+<li>Warszawa &#8211; 20.08.2022 Dzień 25<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/08/Wyniki_WARSZAWA_20-08-2022_Dzien_025.pdf"> </a></li>
+<li>Warszawa &#8211; 21.08.2022 Dzień 26<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/08/Wyniki_WARSZAWA_21-08-2022_Dzien_026.pdf"> </a></li>
+<li>Warszawa &#8211; 27.08.2022 Dzień 27<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/09/Wyniki_WARSZAWA_27-08-2022_Dzien_027.pdf"> </a></li>
+<li>Warszawa &#8211; 28.08.2022 Dzień 28<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/09/Wyniki_WARSZAWA_28-08-2022_Dzien_028.pdf"> </a></li>
+<li>Warszawa &#8211; 03.09.2022 Dzień 29<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/09/Wyniki_WARSZAWA_03-09-2022_Dzien_029.pdf"> </a></li>
+<li>Warszawa &#8211; 10.09.2022 Dzień 30<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/09/Wyniki_WARSZAWA_10-09-2022_Dzien_030.pdf"> </a></li>
+<li>Warszawa &#8211; 11.09.2022 Dzień 31<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/09/Wyniki_WARSZAWA_11-09-2022_Dzien_031.pdf"> </a></li>
+<li>Warszawa &#8211; 17.09.2022 Dzień 32<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/09/Wyniki_WARSZAWA_17-09-2022_Dzien_032.pdf"> </a></li>
+<li>Warszawa &#8211; 18.09.2022 Dzień 33<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/09/Wyniki_WARSZAWA_18-09-2022_Dzien_033.pdf"> </a></li>
+<li>Warszawa &#8211; 25.09.2022 Dzień 34<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/09/Wyniki_WARSZAWA_25-09-2022_Dzien_034.pdf"> </a></li>
+<li>Warszawa &#8211; 01.10.2022 Dzień 35<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/10/Wyniki_WARSZAWA_01-10-2022_Dzien_035.pdf"> </a></li>
+<li>Warszawa &#8211; 02.10.2022 Dzień 36<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/10/Wyniki_WARSZAWA_02-10-2022_Dzien_036.pdf"> </a></li>
+</ul>
+<p>&nbsp;</p>
+</div>
+<div class="column-half second">
+<p><span style="font-family: Georgia,Palatino; display: inline-block; padding: 0px 5px; margin: 0px 2px; color: #008000; font-size: 14pt;"><strong>Wrocław</strong></span></p>
+<ul class="list_s1 list_doc">
+<li>Wrocław &#8211; 03.05.2022 <a href="https://www.torpartynice.pl/gonitwy/2022-05-03/" target="_blank" rel="noopener"><strong>Dzień 1</strong></a></li>
+<li>Wrocław &#8211; 14.05.2022 <strong><a href="https://www.torpartynice.pl/gonitwy/2022-05-14/" target="_blank" rel="noopener">Dzień 2</a></strong></li>
+<li>Wrocław &#8211; 28.05.2022 <strong><a href="https://www.torpartynice.pl/gonitwy/2022-05-28/" target="_blank" rel="noopener">Dzień 3</a></strong></li>
+<li>Wrocław &#8211; 04.06.2022 <strong><a href="https://www.torpartynice.pl/gonitwy/2022-06-04/" target="_blank" rel="noopener">Dzień 4</a></strong></li>
+<li>Wrocław &#8211; 16.06.2022 <strong><a href="https://www.torpartynice.pl/gonitwy/2022-06-16/" target="_blank" rel="noopener">Dzień 5</a></strong></li>
+<li>Wrocław &#8211; 25.06.2022 <strong><a href="https://www.torpartynice.pl/gonitwy/2022-06-25/" target="_blank" rel="noopener">Dzień 6</a></strong></li>
+<li>Wrocław &#8211; 13.08.2022 <strong><a href="https://www.torpartynice.pl/gonitwy/2022-08-13/" target="_blank" rel="noopener">Dzień 7</a></strong></li>
+<li>Wrocław &#8211; 04.09.2022 <strong><a href="https://www.torpartynice.pl/gonitwy/2022-09-04/" target="_blank" rel="noopener">Dzień 8</a></strong></li>
+<li>Wrocław &#8211; 10.09.2022 <strong><a href="https://www.torpartynice.pl/gonitwy/2022-09-10/" target="_blank" rel="noopener">Dzień 9</a></strong></li>
+<li>Wrocław &#8211; 24.09.2022 <strong><a href="https://www.torpartynice.pl/gonitwy/2022-09-24/" target="_blank" rel="noopener">Dzień 10</a></strong></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-family: Georgia,Palatino; display: inline-block; padding: 0px 5px; margin: 0px 2px; color: #008000; font-size: 14pt;"><strong>Hipodrom Sopot</strong></span></p>
+<ul class="list_s1 list_doc">
+<li>Sopot &#8211; 09.07.2022 Dzień 01<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/07/Wyniki_SOPOT_09-07-2022_Dzien_001.pdf"> </a></li>
+<li>Sopot &#8211; 10.07.2022 Dzień 02<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/07/Wyniki_SOPOT_10-07-2022_Dzien_002.pdf"> </a></li>
+<li>Sopot &#8211; 16.07.2022 Dzień 03<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/07/Wyniki_SOPOT_16-07-2022_Dzien_003.pdf"> </a></li>
+<li>Sopot &#8211; 17.07.2022 Dzień 04<a class="doc_pdf" href="https://www.pkwk.pl/wp-content/uploads/2022/07/Wyniki_SOPOT_17-07-2022_Dzien_004.pdf"> </a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article><!-- #post -->			
+</div>
+	</div>
+<footer id="footer" class="row_medium">
+<div id="menu_bottom">
+<div class="col">
+<ul id="menu-boczne-menu-1" class="menu_bottom"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2256"><a href="https://www.pkwk.pl/language/pl/aktualnosci/">Aktualności</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2041"><a href="https://www.pkwk.pl/language/pl/informacje-wyscigowe/">Informacje wyścigowe</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2042"><a href="https://www.pkwk.pl/language/pl/statystyki/">Statystyki</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6233"><a href="https://www.pkwk.pl/language/pl/sprawozdania-wyscigowe/">Sprawozdania wyścigowe</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5516"><a href="https://www.pkwk.pl/language/pl/szkolenia-i-seminaria/">Szkolenia i seminaria</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2040"><a href="https://www.pkwk.pl/language/pl/komunikaty/">Komunikaty</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4262"><a href="https://www.pkwk.pl/language/pl/zarzadzenia/">Zarządzenia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2038"><a href="https://www.pkwk.pl/language/pl/biuletyn-pkwk/">Biuletyn</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27033"><a href="https://www.pkwk.pl/language/pl/ksiegi-stadne/">FORMULARZE &#8211; Księgi Stadne</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2043"><a href="https://www.pkwk.pl/language/pl/wzory/">FORMULARZE &#8211; Wyścigi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30463"><a href="https://wnioski.pkwk.pl/login?next=%2F">WNIOSKI on-line</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2039"><a href="https://www.pkwk.pl/language/pl/cennik/">Cennik opłat urzędowych</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2115"><a target="_blank" rel="noopener" href="https://www.pkwk.pl/language/pl/?page_id=2112">Galeria zdjęć</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9070"><a href="https://www.pkwk.pl/language/pl/contact/">Kontakt</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27919"><a title="KOŃ POLSKI" target="_blank" rel="noopener" href="http://konpolski.pl/">Magazyn KOŃ POLSKI</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27920"><a title="Pride of Poland" target="_blank" rel="noopener" href="http://prideofpoland.com/">Pride of Poland</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-17697"><a href="https://www.pkwk.pl/language/pl/zamowienia-publiczne/">ZAMÓWIENIA PUBLICZNE</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-18808"><a title="POLITYKA PRYWATNOŚCI" target="_blank" rel="noopener" href="https://www.pkwk.pl/language/pl/polityka-prywatnosci/">POLITYKA PRYWATNOŚCI</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-22438"><a href="https://www.pkwk.pl/language/pl/polityka-antykorupcyjna/">POLITYKA ANTYKORUPCYJNA</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-27305"><a href="https://www.pkwk.pl/language/pl/deklaracja-dostepnosci-polskiego-klubu-wyscigow-konnych/">Deklaracja dostępności PKWK</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15225"><a target="_blank" rel="noopener" href="https://www.pkwk.pl/language/pl/informacja-o-archiwach-ptwk-i-stwk/">Informacja dla byłych pracowników PTWK i STWK</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-30076"><a href="https://www.pkwk.pl/language/pl/oferty-pracy/">Oferty pracy</a></li>
+</ul>				
+</div>
+<div class="col">
+<ul class="menu_bottom">
+<li>Prawo wyścigowe
+<ul id="menu-stopka-menu-1" class=""><li id="menu-item-2047" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2047"><a href="https://www.pkwk.pl/language/pl/ustawa/">Ustawa o wyścigach konnych</a></li>
+<li id="menu-item-9519" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9519"><a href="https://www.pkwk.pl/language/pl/regulamin-wyscigow-konnych-2016/">Regulamin wyścigów konnych 2016</a></li>
+<li id="menu-item-9068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9068"><a href="https://www.pkwk.pl/language/pl/statut/">Statut PKWK</a></li>
+<li id="menu-item-2046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2046"><a href="https://www.pkwk.pl/language/pl/inne-rozporzadzenia-i-regulaminy/">Inne rozporządzenia i regulaminy</a></li>
+<li id="menu-item-9069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9069"><a href="https://www.pkwk.pl/language/pl/regulamin-pracy-rady-pkwk/">Regulamin Pracy Rady PKWK</a></li>
+</ul>				
+</li>
+</ul>
+<ul class="menu_bottom">
+<li>Organizacja Klubu					<ul id="menu-stopka-menu-2" class=""><li id="menu-item-2049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2049"><a href="https://www.pkwk.pl/language/pl/prezes/">Prezes</a></li>
+<li id="menu-item-2052" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2052"><a href="https://www.pkwk.pl/language/pl/wydzialy/">Wydziały</a></li>
+<li id="menu-item-9065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9065"><a href="https://www.pkwk.pl/language/pl/biuletyn-pkwk/">Biuletyny</a></li>
+<li id="menu-item-9066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9066"><a href="https://www.pkwk.pl/language/pl/cennik/">Cennik</a></li>
+<li id="menu-item-13197" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13197"><a href="https://www.pkwk.pl/language/pl/rada-nowej-kadencji-2016/">Rada PKWK</a></li>
+</ul>				
+</li>
+</ul>
+<ul class="menu_bottom">
+<li>Tory wyścigowe w Polsce					<ul id="menu-stopka-menu-3" class=""><li id="menu-item-2053" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2053"><a href="http://www.torsluzewiec.pl/">Służewiec &#8211; Warszawa</a></li>
+<li id="menu-item-2054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2054"><a href="http://www.wtwk-partynice.pl/">Partynice &#8211; Wrocław</a></li>
+<li id="menu-item-2055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2055"><a href="http://www.hipodrom.sopot.pl/">Hipodrom Sopot</a></li>
+<li id="menu-item-2056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2056"><a target="_blank" rel="noopener" href="http://www.wyscigimalopolskie.pl/">Błonia Krakowskie &#8211; Kraków</a></li>
+</ul>				
+</li>
+</ul>
+</div>
+<div id="newsletter">
+<p class="ntitle">Newsletter</p>
+Ostatnie wpisy
+<ul>
+<li>
+<a href="https://www.pkwk.pl/language/pl/reproduktory-2-letnich-koni-pelnej-krwi-angielskiej-wg-wygranych-sum-01-01-2022-25-09-2022/">Reproduktory 2-letnich koni pełnej krwi angielskiej wg. wygranych sum 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/ojcowie-matek-koni-pelnej-krwi-angielskiej-wg-sum-wygranych-ogolem-w-okresie-01-01-2022-25-09-2022/">Ojcowie matek koni pełnej krwi angielskiej wg. sum wygranych ogółem w okresie 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/reproduktory-pelnej-krwi-angielskiej-wg-wygranych-sum-ogolem-w-okresie-01-01-2022-25-09-2022/">Reproduktory pełnej krwi angielskiej wg. wygranych sum ogółem w okresie 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/reproduktory-czystej-krwi-arabskiej-wg-wygranych-sum-w-okresie-01-01-2022-25-09-2022/">Reproduktory czystej krwi arabskiej wg. wygranych sum w okresie 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/hodowcy-wg-wygranych-sum-w-okresie-01-01-2022-25-09-2022/">Hodowcy wg. wygranych sum w okresie 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/wlasciciele-wg-wygranych-sum-w-okresie-01-01-2022-25-09-2022-2/">Właściciele wg. wygranych sum w okresie 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/wlasciciele-wg-wygranych-sum-w-okresie-01-01-2022-25-09-2022/">Właściciele wg. wygranych sum w okresie 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/hodowcy-koni-pelnej-krwi-angielskiej-wg-zajetych-miejsc-w-okresie-01-01-2022-25-09-2022/">Hodowcy koni pełnej krwi angielskiej wg. zajętych miejsc w okresie 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/hodowcy-koni-arabskich-czystej-krwi-wg-zajetych-miejsc-w-okresie-01-01-2022-25-09-2022/">Hodowcy koni arabskich czystej krwi wg. zajętych miejsc w okresie 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/trenerzy-wg-zajetych-miejsc-w-gonitwach-plaskich-dla-koni-pelnej-krwi-angielskiej-01-01-2022-25-09-2022/">Trenerzy wg zajętych miejsc w gonitwach płaskich dla koni pełnej krwi angielskiej 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/trenerzy-wg-zajetych-miejsc-w-gonitwach-dla-koni-arabskich-w-okresie-01-01-2022-25-09-2022/">Trenerzy wg. zajętych miejsc w gonitwach dla koni arabskich w okresie 01.01.2022 – 25.09.2022</a>
+<span class="post-date">2022-10-06</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/handikap-generalny-na-dzien-03-10-2022/">Handikap generalny na dzień 03.10.2022</a>
+<span class="post-date">2022-10-04</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/nekrolog-krystyny-karaszewskiej/">Nekrolog Krystyny Karaszewskiej</a>
+<span class="post-date">2022-09-30</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/krystyna-karaszewska-pozegnanie/">Krystyna Karaszewska &#8211; pożegnanie</a>
+<span class="post-date">2022-09-29</span>
+</li>
+<li>
+<a href="https://www.pkwk.pl/language/pl/handikap-generalny-na-dzien-26-09-2022/">Handikap generalny na dzień 26.09.2022</a>
+<span class="post-date">2022-09-27</span>
+</li>
+</ul>
+</div>
+</div>
+<div id="links">
+<a href="http://pkwk.bip.nor.pl"><img class="pc" src="https://www.pkwk.pl/wp-content/themes/pkwk/img/links/bip.png" alt="" /><img class="mobile" src="https://www.pkwk.pl/wp-content/themes/pkwk/img/links/bip_m.png" width="50" alt="" /></a>
+<div>
+<a href="https://www.facebook.com/PolishJockeyClub"><img class="pc" src="https://www.pkwk.pl/wp-content/themes/pkwk/img/links/fb.jpg" alt="Facebook" /><img class="mobile" src="https://www.pkwk.pl/wp-content/themes/pkwk/img/links/fb_m.jpg" alt="Facebook" /></a>
+<a href="https://twitter.com/PLJockeyClub"><img class="pc" src="https://www.pkwk.pl/wp-content/themes/pkwk/img/links/twitter.jpg" alt="Twitter" /><img class="mobile" src="https://www.pkwk.pl/wp-content/themes/pkwk/img/links/twitter_m.jpg" alt="Twitter" /></a>
+<a href="https://instagram.com/pljockeyclub"><img class="pc" src="https://www.pkwk.pl/wp-content/themes/pkwk/img/links/instagram.jpg" alt="Instagram" /><img class="mobile" src="https://www.pkwk.pl/wp-content/themes/pkwk/img/links/instagram_m.jpg" alt="Instagram" /></a>
+</div>
+</div>
+<div id="copyright">
+©2015 Polski Klub Wyścigów Konnych		</div>
+<script type='text/javascript' src='https://www.pkwk.pl/wp-content/plugins/data-tables-generator-by-supsystic/app/assets/js/dtgsnonce.js?ver=0.01' id='dtgs_nonce_frontend-js'></script>
+<script type='text/javascript' id='dtgs_nonce_frontend-js-after'>
+var DTGS_NONCE_FRONTEND = "851e43856a"
+</script>
+<script type='text/javascript' src='https://www.pkwk.pl/wp-content/themes/pkwk/widgety/js/jquery-ui.js?ver=1.11.4' id='jquery-ui_scripts-js'></script>
+<script type='text/javascript' src='https://www.pkwk.pl/wp-content/themes/pkwk/widgety/js/custom-error-notification.js?ver=1.0' id='custom-error-notification-js-js'></script>
+<script type='text/javascript'>
+(function() {
+var expirationDate = new Date();
+expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+document.cookie = "pll_language=pl; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+}());
+</script>
+<script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
+</footer>
+</div>
+</body>
+</html><!-- WP Fastest Cache file was created in 0.52421092987061 seconds, on 07-10-22 10:43:34 --><!-- via php -->

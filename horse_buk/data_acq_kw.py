@@ -1,25 +1,19 @@
 """Contain methods for acquisition data from koniewyscigowe.pl"""
 from pathlib import Path
-from genericpath import exists
-import urllib.request, urllib.error, urllib.parse
 from selenium import webdriver
 import db_insert
 import db_creation as db
 import os
 from datetime import datetime
-from unidecode import unidecode
-
-
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC 
 from bs4 import BeautifulSoup
 from sqlalchemy.orm import sessionmaker
-import time
 
 Session = sessionmaker(bind = db.engine)
 
-class data_acq_kw():
+class Data_Acq_kw():
     def find_right_horse(self, name, search_page):
         """selecting right horses href from few serching results"""
         href = None
@@ -203,16 +197,3 @@ class data_acq_kw():
                                     , horse_stable_ID = horse_stable_ID, horse_size = size)
         #except: return
             os.remove(f"horse_page_{name}.txt")
- 
- 
-"""checker = data_acq_kw()
-checker.get_horse_data("Xaara")"""
-"""session = Session()
-ask = session.query(db.Horses.ID).filter(db.Horses.name == "Hilal Muscat").first()[0]
-print(ask)
-"""
-# https://koniewyscigowe.pl/horse/12892-abadan
-
-
-
-#get_horse_data("Chibani")

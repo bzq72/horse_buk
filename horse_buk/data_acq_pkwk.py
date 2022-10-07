@@ -16,29 +16,45 @@ from db_insert import insert_record, is_exist
 
 Session = sessionmaker(bind = db.engine)
 
-class data_acq_pkwk():
-    
+class Data_Acq_pkwk():
     def __init__(self, url_protocols_adres = "https://www.pkwk.pl/language/pl/sprawozdania-2022/"):
-        self.last_version = None
+        try:
+            with open (f"last_pkwk_ver.txt","rb") as last_pkwk_ver:
+                self.last_version = last_pkwk_ver.read().decode('UTF-8')
+        except: self.last_version = None
         self.protocols_urls_list = []
         self.url_protocols = url_protocols_adres
-        response = urllib.request.urlopen(self.url_protocols)
+        #response = urllib.request.urlopen(self.url_protocols)
         #self.last_version = response.read().decode('UTF-8')
         
     def is_sth_new(self):
         """checking if there is new protocol on website"""
-        response = urllib.request.urlopen(self.url_protocols)
-        self.checking_version = response.read().decode('UTF-8')
-        return self.checking_version != self.last_version
-        
+        #response = urllib.request.urlopen(self.url_protocols)
+        #self.checking_version = response.read().decode('UTF-8')
+        response = requests.get(self.url_protocols)
+        response.encoding = response.apparent_encoding
+        self.checking_version = response.content
+        if self.checking_version == self.last_version:
+            while True:
+                force =  input("No new version available\nDo you want to force updating? (y/n)") 
+                if force== "y": return True
+                elif force == "n": return False
+        return True
 
     def get_new_version(self):
         """getting latest version of website"""
-        if self.is_sth_new(): 
+        sth_new = self.is_sth_new()
+        if sth_new: 
             self.last_version = self.checking_version
+            with open("last_pkwk_ver.txt", "wb") as last_pkwk_ver:
+                last_pkwk_ver.write(self.last_version)
             print("New version downladed")
+            self.last_version = str(self.checking_version)
         # next line only for debuging
-        elif not self.is_sth_new(): print("No new version available")
+        elif not sth_new: 
+            print("No new version available")
+             
+            
         
     def update_protocol_set(self):
         print("update_protocol_set")
@@ -52,7 +68,6 @@ class data_acq_pkwk():
         else:
             breakpoint()
         protocols_iterator = pattern_url.finditer(self.last_version)
-        protocols_iterator.__next__
         for protocol in protocols_iterator:
             if protocol not in self.protocols_urls_list: 
                 self.protocols_urls_list.append(protocol.group())
@@ -210,7 +225,7 @@ class data_acq_pkwk():
                 session = Session()
                 rp_horse_ID = session.query(db.Horses.ID).filter(db.Horses.name == rp_horse).first()[0]
             else: 
-                obj = dck.data_acq_kw()
+                obj = dck.Data_Acq_kw()
                 while True:
                     obj.get_horse_data(rp_horse)
                     session = Session()
@@ -286,11 +301,3 @@ class data_acq_pkwk():
                                        br_kwn=br_kwn, br_czw=br_czw,br_spt=br_spt)      
         
         
-              
-#checker = data_acq_pkwk()
-
-#ht = "https://www.pkwk.pl/wp-content/uploads/2022/09/Wyniki_WARSZAWA_11-09-2022_Dzien_031.pdf"
-#checker.obtain_race_day_info(checker.get_extracted_protocol(ht))
-#checker.download_every_thing()
-
-##
