@@ -1,93 +1,96 @@
-# Just for template
-
-
-
-# Cars adv analyser
-Program to browser cars adverts with option to predict car value. Main purpose of project is sharping programming skills and getting practical knowledge of working with data, predictions models and simple GUI.
+# Horse buk
+Terminal program to create and update database based on information from horse racing protocols and website koniewyscigowe.pl. In the future program will be predicting which horse should win the race. Main purpose of project is sharping programming skills and getting practical knowledge of working with data, object–relational mapping webscrapping, working with pdf and regex.
 
 ### Method used:
-- 	 Predictive Modeling
 - 	 Data processing 
-- 	 Inferential Statistics
-- 	 Graphic User Interface
+- 	 Object–relational mapping
+- 	 Webscrapping
+- 	 Regex
 - 	 and more
-
 
 ### Technologies:
 - 	 Python
 - 	 Pandas, NumPy
-- 	 scikit-learn
-- 	 tkinter
+- 	 selenium
+- 	 BeautifulSoup
+ - 	 SqlAlchemy 
+ - 	 pyodbc
+- 	 and more
 
 ## Project background:
-First idea was creating simple adverts browser based on Tkinter library. As a database was used JSON from german website with cars adverts from 2016. During cleaning and preprocessing with Pandas library, appeared thought to completed blank/Nan values using informations from advert name.  After completed this stage, project was abandoned.
+Idea is creating program for predicting which horse will win race. To predict will be used machine learning methods and informations extracted from horse racing protocols located on Polish Horse Racing Club website: pkwk.pl and from website which shares information about horses: koniewyscigowe.pl. 
 
-After few weeks and learning more about machine learning, project has been given new lease of life. Idea was simple: based on knowlegde about price and details from cars adverts, predict price of users car. To reach this goal, it was necessary to build regression models, transform database and more.
+Currently program enables  to getting informations from pkwk.pl, koniewyscigowe.pl and store them in database. It also has simple termianal user interface. For keeping data is used SQLEXPRESS on local server. Faster and easier data transformation Database<->Program is possible due to ORM library SqlAlchemy. Webscrapping is opearted by Selenium  and BeautifulSoup. Getting informations about races from protocols in PDF format is made by using regular expressions (module re).
 
-Currently project is fully operational. 
-
-Next ideas:
-- 	complete help and menu;
-- 	accelerate action;
-- 	shorter code;
-- 	 transfer program to website;
-- 	 get actual adverts.
+Next goals:
+- 	add adding information about server to UI;
+- 	reorganise database (information about finishing distance should be assigned for each place, not info about finishing)
+- 	create machine learing models
 
 
 ## User manual:
-Program allowed user to browser cars adverts (browser window) and predtict value of car (predictor window).
-Both windows are devided on few section which are a little differ):
-- 	 Navigation buttons:
-	 - 	 "Open adverts browser" - switch to browser window
-	 - 	 "Open price predictor" - switch to predictor window
-- 	 Functions buttons - include buttons for void functions
-- 	 Options choose frame - include widgets for setting cars features
-- 	 Results frame - include results of user work
-
-![This is an image](https://i.postimg.cc/hjjHSMmf/Frames.jpg)
-
-### Browser window
-
-*Funtions buttons:*
-- 	"Check models" - before using this button user have to select brand from brand frame. His function is showing available models in model frame for selected brands.
-- 	"Filtr" - filtering adverts based on selected features and showing them in results frame.
-- 	"Reset" - reset "Options choose frame" and "Result frame"
-- 	"Complete missing data" - searching information about gearbox,  models, fuel type in advert description and with them fill up missing data.
-
-*Options choose frame* - showing available cars features for fiktering data.
-
-*Results fram - showing filtered adverts
+Termianal apllication hass uch avaiable functions:
+- 	isSthNew - checking if there is avaiable new protocols on pkwk.pl with comperision on last checked time. (Warning! If on last time date from protocols was not succesfull or fully processed there will be information „No new version avaiable”. However there will be possibility to forced this function to return „New version avaiable” and behave like it is new version.
+- 	updateDatabase - update database of info about last protocols – first triggered function is  „isSthNew” (look above) if there are new protocols, their are extraced and informations from them are processed to database. During it, necessity to write some data from keyboard (for more information read "GetDataBase" in section "Troubleshooting")
+- 	importHorse/(horse name) - searching and importing data about specified horse from koniewyścigowe.pl (for more information read "ImportHorses" in section "Troubleshooting")
+- 	there is possibility to get/update/delete data from database using sqlqueries:
+	- 	sql/(sqlquery) - e.g. sql/Select * from Horses - using sql queries on database
+	- 	update/(sqlquery) - e.g. update/UPDATE Horses SET gender = 'klacz' WHERE ID = 4669 - updating database records		
+	- 	delete/(sqlquery) e.g. delete/DELETE FROM Horses WHERE ID = 4669 - deleting database records
+	- 	insert/(sqlquery) e.g. insert/INSERT INTO Horses (name) VALUES ('Janina') - inserting database records
+	- 	qlToExcel/(sqlquery)/outputFile - e.g. sqlToExcel/Select * from Horses/allHorses - saving results of sql queries to xlsx file outputFile
+- 	exit - to close application
 
 
-### Predictor window
-
-In comparison with "Browser window" we can fine few differences:
-- "Check price" button - based on selected features, car price is estimating and showed in "Result frame":
-- "Result frame" - include informations about estimated value of user car and statistic about similar cars price: min, max, mean, median.
-
-![This is an image](https://i.postimg.cc/GmmNPqMz/predi.jpg)
 
 
 
 ## Project review:
+### Database:
+To handling database is used SQLEXPRESS and SqlAlchemy. 
+#### Structure:
+	Jakies obrazki z połączeniami
 
-Project is devided on 5 clases: 
-- 	 DB - include: loading database from JSON format, changing columns types, data precleaning, completing functions( jakis link do nich);
-- 	 Gui_Base - parent class for Browser and Price_Predictor, include main function for GUI organisation, abstractfunctions, warning decorator, getting parameters from filter and filtering;
-- 	 Browser - include selecting items from parent class
-- 	 Price_Predictor - include selecting items from parent class, modyfications of some parent functions, handling Model_Pre class;
-- 	 Model_Pre - include price prediction functions by few regression models and preparing dataframe for their use.
-	
-	
+### Protocols:
+Protocols are downloaded from website: https://www.pkwk.pl/language/pl/sprawozdania-wyscigowe/ in pdf format. Protocols example you can find: https://www.pkwk.pl/wp-content/uploads/2022/04/Wyniki_WARSZAWA_24-04-2022_Dzien_001.pdf. 
+With the use of regular expression, protocols are extracted and such data is saved to database:
+- 	Day info:
+	- 	date
+	- 	track
+	- 	track condition
+	- 	weather
+- 	Race info
+	- 	horse group
+	- 	horse age
+	- 	distance
+	- 	time
+	- 	finish
+	- 	booking rates
+	- 	race place
+		- 	place
+		- 	horse 
+		- 	jockey
+
+Due to mistakes and diffrences in protocols, exception handling with breakpoints is used to help (by user) program find right informations. Informations which pdfs were completlly and succesfully processed is keeped in database in table „Protocols”. More informations about horses, which take a part in race is downloaded from koniewyścigowe.pl
+
+![This is an image](https://i.postimg.cc/pdvcs6vm/protokol.jpg)
+
+
+### Horses info:
+Informations about horse such as: name, coat, gender, brith date, breed, origin, father, mother, trainer, owne, stable, size are taken from website: https://koniewyscigowe.pl/ by webscrapping with the use of Selenium and BeautifulSoup. Getting horse data which take part in race can be made by few ways. First program is searching horse name in database, if he not find he will search website for such horse (problems during such search are described in "ImportHorses" in section "Troubleshooting"). Another case when horse data is downloaded is looking for horse parents. Mainly horses website posses href to parents websites. 
+
+![This is an image](https://i.postimg.cc/L8HWmWqj/Herbatka.jpg)
+
+## Troubleshooting
+### ImportHorses:
+ - 	  Few horses can have same name, in this case we will get more than one searching results. As your horse will be choosen the youngest one, because main purpose Tf this program is taking care about participating horses in race, which can’t be old. 
+ - 	 If there is no full-matching horse name, but name which you put is part of another horse named, this horse will be added.
+ - 	 If there is no full-matching horse name and no part-marching horse no data will be added
+ - 	 There is more exceptional situation, if you want know more, please ask support: bryk.kam@gmail.com
+
+### GetDataBase:
+Horse racings protocols are not generated but written by people, so there is a lot of mistakes and diffrences between each protocols. It can happen that exisiting regex patterns are no matching for exceptional cases. In such situations user will be ask to write data from keyboard, for example: horse name, jockey name etc. To cope this, lines where program have problem with recognizing data are showed above. 
 ### Selected programs features description:
-
-#### Price prediction:
-Data for car predicition are sourced from main database by filtering similar cars features. Filters are setteed by user. There are also extra filters to unselect extremal vairables value. Selected advert must have same brand and model, production year has 2 years deviation. If we have more than 100 filtered adverts, we are using sequentially: gearbox, fuel type, vehicle type filter, until amount of adverts is above 100. Next columns powerPS, kilometr stand, production year are tranforming to boolean columns. PowerPS,  kilometr stand are deviding to ranges. Production year columns are devided for each year boolean columns. We are not in possession information about models generetions, if we take a look on price-production year chart we see stepped line, thats why we are treating this variable as categorical one. Afterwards set is devided to train and test one.
-For most accurate price estimating, prediction is made by few regression models: linear regression, lasso regression, ridge regression, AdaBoost regression,  Random Forrest regressor, K-nearest Neighbours Regression. To predict price is choosen, this one with best r^2 score.
-
-#### Completing categories:
-Mostly website users during creating their cars selling adverts aren't filling all of avaiable features. However, they put a lot of infromations in adverts title or description e.g.: "VW_PASSAT_1.9_TDI_131_PS_LEDER", "BMW_530d_touring_Vollausstattung_NAVI", "Opel_meriva_1.6_16_v_lpg__z16xe_no_OPC". With such information and knowledge what we are searching, we can try to fill up missing values.
-Program has a static variables signed for some categories (gearbox, fuel type, model (for now only audi models)). In adverts names we are searching this static variables for missing values in columns. If found, information is assigned.
 
 
 
