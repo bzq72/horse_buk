@@ -4,7 +4,6 @@ import sqlalchemy as sql
 from sqlalchemy import text, ForeignKey, MetaData, Integer, String, Float, Column
 from sqlalchemy.orm import declarative_base, relationship
 
-
 metadata_obj = MetaData()
 Base = declarative_base()
 

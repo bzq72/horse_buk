@@ -1,9 +1,6 @@
 """Contain methods for acquisition data from race protocols (pkwk.pl)"""
-
 from datetime import datetime
 from itertools import chain
-from sys import flags
-import urllib.request, urllib.error, urllib.parse
 import re
 import requests
 import PyPDF2
@@ -57,7 +54,6 @@ class Data_Acq_pkwk():
             
         
     def update_protocol_set(self):
-        print("update_protocol_set")
         """updating protocol sets"""
         if "2022" in self.url_protocols:
             pattern_url = re.compile('https:\/\/www\.pkwk\.pl\/wp-content\/uploads\/2022\/\d{1,}\/Wyniki_(WARSZAWA)_\d{1,}-\d{1,}-\d{4,}_Dzien_\d{3,}\.pdf')
@@ -73,7 +69,6 @@ class Data_Acq_pkwk():
                 self.protocols_urls_list.append(protocol.group())
                 
     def get_every_protocol(self):
-        print("get_every_protocol")
         """getting all infos avaiable info from all protocols """
         for url in self.protocols_urls_list:
             if is_exist(db.Protocols, (db.Protocols.url_adress == url)): continue
@@ -166,7 +161,7 @@ class Data_Acq_pkwk():
             try: race_distance=re.search(r"(\d{1}\d{1}\d{1} \d{1}m)|(\d{4} m)|(\d{1} \d{3}m)|(\d{2} \d{2}m)",race_info).group()
             except: 
                 breakpoint()
-                print("error line 97")
+                pass
                 
         try: 
             try: 
@@ -233,6 +228,7 @@ class Data_Acq_pkwk():
                         rp_horse_ID = session.query(db.Horses.ID).filter(db.Horses.name == str(rp_horse).strip()).first()[0]
                         break
                     except:     
+                        print("*********************************")
                         print(place_info.group())
                         rp_horse = input("write horse name or add {name of Horsce} without brackets to add new Horse\n")
                         if "add" in rp_horse.split(): 
@@ -248,6 +244,7 @@ class Data_Acq_pkwk():
                 rp_jockey_name = re.search(r"[A-Z]+\.",rp_jockey,flags=re.MULTILINE).group().strip()
                 rp_jockey_surname = re.search(r"\.( )*\S*",rp_jockey,flags=re.MULTILINE).group()[1:].strip()
             except:
+                print("*********************************")
                 print(place_info.group())
                 rp_jockey_name = input("Put jockey name\n")
                 rp_jockey_surname =  input("Put jockey surname\n")
