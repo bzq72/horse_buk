@@ -4,14 +4,7 @@ import sqlalchemy as sql
 from sqlalchemy import text, ForeignKey, MetaData, Integer, String, Float, Column
 from sqlalchemy.orm import declarative_base, relationship
 
-# Enterprise DB to be used
-DRIVER = "ODBC Driver 17 for SQL Server"
-SERVERNAME = "DESKTOP-1SHBR4M"
-INSTANCENAME = "\SQLEXPRESS"
-DB = "horse_buk_db"
 
-engine = sql.create_engine(f"mssql+pyodbc://@{SERVERNAME}{INSTANCENAME}/{DB}?driver={DRIVER}", pool_size=50)
-con = engine.connect()
 metadata_obj = MetaData()
 Base = declarative_base()
 
@@ -122,5 +115,20 @@ class Protocols(Base):
     __tablename__ = 'Protocols'
     ID = Column(Integer, primary_key=True)
     url_adress = Column(String(200), nullable=False)
+
+while True:
+    # Enterprise DB to be used
+    print("Please enterprise database, which you want to use.\n")
+    DRIVER = input("Put info about drivier e.g. ODBC Driver 17 for SQL Server\n")
+    SERVERNAME = input("Put servername e.g. DESKTOP-1SHBR4M\n")
+    INSTANCENAME = input("Put instance name e.g. \SQLEXPRESS\n")
+    DB = input("Put database name e.g. horse_buk_db\n")
+    try: 
+        engine = sql.create_engine(f"mssql+pyodbc://@{SERVERNAME}{INSTANCENAME}/{DB}?driver={DRIVER}", pool_size=50)
+        con = engine.connect()
+        print("Connected to database")
+        break
+    except: 
+        print("Something went wrong, please try again")
 
 Base.metadata.create_all(engine)
