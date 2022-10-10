@@ -118,10 +118,10 @@ class Protocols(Base):
 while True:
     # Enterprise DB to be used
     print("Please enterprise database, which you want to use.\n")
-    DRIVER = input("Put info about drivier e.g. ODBC Driver 17 for SQL Server\n")
-    SERVERNAME = input("Put servername e.g. DESKTOP-1SHBR4M\n")
-    INSTANCENAME = input("Put instance name e.g. \SQLEXPRESS\n")
-    DB = input("Put database name e.g. horse_buk_db\n")
+    DRIVER = "ODBC Driver 17 for SQL Server"
+    SERVERNAME = input("Put yours server name e.g. DESKTOP-1SHBR4M\n")
+    INSTANCENAME = "\SQLEXPRESS"
+    DB = "horse_buk_db"
     try: 
         engine = sql.create_engine(f"mssql+pyodbc://@{SERVERNAME}{INSTANCENAME}/{DB}?driver={DRIVER}", pool_size=50)
         con = engine.connect()
