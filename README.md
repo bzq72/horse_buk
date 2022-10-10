@@ -17,6 +17,12 @@ Terminal program to create and update database based on information from horse r
  - 	 pyodbc
 - 	 and more
 
+## Installation
+
+From link below download .RAR package and then run Horse_buk.exe. Then put info about your server. That's all!
+
+https://www.dropbox.com/s/mzdk0anlscsyv27/horse_buk.rar?dl=0
+
 ## Project background:
 Idea is creating program for predicting which horse will win race. To predict will be used machine learning methods and information extracted from horse racing protocols located on Polish Horse Racing Club website: pkwk.pl and from website which shares information about horses: koniewyscigowe.pl. 
 
