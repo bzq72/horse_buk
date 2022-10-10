@@ -46,7 +46,7 @@ Terminal application has such available functions:
 ### Database:
 To handling database is used SQLEXPRESS and SqlAlchemy. 
 #### Structure:
-	Jakies obrazki z połączeniami
+![This is an image](https://i.postimg.cc/q7Z6NZ4t/struktura.jpg)
 
 ### Protocols:
 Protocols are downloaded from website: https://www.pkwk.pl/language/pl/sprawozdania-wyscigowe/ in PDF format. Protocols example you can find: https://www.pkwk.pl/wp-content/uploads/2022/04/Wyniki_WARSZAWA_24-04-2022_Dzien_001.pdf. 
